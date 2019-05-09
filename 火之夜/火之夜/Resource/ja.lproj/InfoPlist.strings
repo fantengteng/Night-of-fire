@@ -1,0 +1,17 @@
+/* 
+  InfoPlist.strings
+  火之夜
+
+  Created by linlin dang on 2019/4/29.
+  Copyright © 2019 FTT. All rights reserved.
+*/
+
+
+CFBundleDisplayName = "火の夜";
+
+"首页" = "最初のページ";
+"消息" = "メッセージ";
+"资讯" = "情報";
+"我的" = "私の";
+"LJDL" = "すぐに登録します";
+

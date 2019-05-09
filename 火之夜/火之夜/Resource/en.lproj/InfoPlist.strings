@@ -1,0 +1,19 @@
+/* 
+  InfoPlist.strings
+  火之夜
+
+  Created by linlin dang on 2019/4/29.
+  Copyright © 2019 FTT. All rights reserved.
+*/
+
+CFBundleDisplayName = "Night of fire";
+
+"首页" = "Home";
+"消息" = "NewS";
+"资讯" = "Info";
+"我的" = "My";
+"LJDL" = "Login immediately";
+"SJH" = "手机号";
+"MM" = "密码";
+"ZC" = "注册";
+
