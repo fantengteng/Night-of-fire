@@ -13,24 +13,18 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HZY_MyfabuCell">
-            <rect key="frame" x="0.0" y="0.0" width="175" height="230"/>
+            <rect key="frame" x="0.0" y="0.0" width="175" height="240"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="175" height="230"/>
+                <rect key="frame" x="0.0" y="0.0" width="175" height="240"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RH2-Ke-0Fd">
-                        <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="175" id="QVf-1e-K15"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdZ-ws-1Jo">
                         <rect key="frame" x="5" y="175" width="170" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="XXI-Ut-Pgy"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -41,10 +35,16 @@
                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="25" id="L4f-oZ-aXI"/>
                             <constraint firstAttribute="height" constant="25" id="MOP-uT-j0e"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.92161411049999997" green="0.33475178480000001" blue="0.2901539803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RH2-Ke-0Fd">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="175" id="QVf-1e-K15"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
@@ -68,7 +68,7 @@
                 <outlet property="price_LAB" destination="GsN-97-3ah" id="c6g-Xc-cia"/>
                 <outlet property="title_LAB" destination="GdZ-ws-1Jo" id="lIH-bU-5F3"/>
             </connections>
-            <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
+            <point key="canvasLocation" x="136.80000000000001" y="153.82308845577214"/>
         </collectionViewCell>
     </objects>
 </document>

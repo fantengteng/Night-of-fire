@@ -7,11 +7,13 @@
 //
 
 #import "TT_BaseC.h"
-
+#import "HZY_xiaoxiTableV.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HZY_XiaoxiC : TT_BaseC
-
+@property (nonatomic , strong) HZY_xiaoxiTableV *TableV;
+@property (nonatomic,strong) NSIndexPath *selectIndexPath;
+@property (nonatomic,assign) CGRect finalCellRect;
 @end
 
 NS_ASSUME_NONNULL_END

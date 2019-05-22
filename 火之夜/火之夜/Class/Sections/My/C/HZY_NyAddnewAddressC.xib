@@ -115,7 +115,7 @@
                     <color key="textColor" red="0.26666867729999999" green="0.26666298510000003" blue="0.26666685940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输写真实姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooj-uY-dNd">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入详细地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooj-uY-dNd">
                     <rect key="frame" x="95" y="217" width="265" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="Tbf-gc-Sb8"/>

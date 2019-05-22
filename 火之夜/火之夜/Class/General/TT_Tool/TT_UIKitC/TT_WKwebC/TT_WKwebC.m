@@ -141,7 +141,6 @@
         _Web = [[TT_WKweb alloc]initWithFrame:self.Web_frame];
         _Web.TT_WKDelegate = self;
         _Web.is_firstSlide = YES;
-//        _Web.wkweb_pv.ColosArray =  [NSArray arrayWithObjects:(id)[UIColor grayColor].CGColor,(id)[UIColor grayColor].CGColor ,(id)[UIColor grayColor].CGColor ,nil];
     }
     return _Web;
 }

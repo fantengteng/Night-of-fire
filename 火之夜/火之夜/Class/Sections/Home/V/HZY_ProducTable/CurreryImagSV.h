@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , assign) CGFloat H;
 
 - (void)configImageS:(NSMutableArray *)ImageS type:(NSInteger)type;
-
+- (void)configbishizhenImageS:(NSMutableArray *)ImageS;
 @end
 
 NS_ASSUME_NONNULL_END

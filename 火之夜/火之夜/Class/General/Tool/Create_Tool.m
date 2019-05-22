@@ -33,6 +33,18 @@
     return manager;
 }
 
++ (YYWebImageManager *)ImageManagerSS {
+    static YYWebImageManager *manager;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *path = [[UIApplication sharedApplication].cachesPath stringByAppendingPathComponent:@"PZ.avatar"];
+        YYImageCache *cache = [[YYImageCache alloc] initWithPath:path];
+        manager = [[YYWebImageManager alloc] initWithCache:cache queue:[YYWebImageManager sharedManager].queue];
+        
+    });
+    return manager;
+}
+
 + (YYWebImageManager *)avatarImageManager {
     static YYWebImageManager *manager;
     static dispatch_once_t onceToken;

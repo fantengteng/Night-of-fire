@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *phone_LAB;
 @property (weak, nonatomic) IBOutlet UILabel *password_LAB;
 @property (weak, nonatomic) IBOutlet UIButton *zhuce;
+@property (weak, nonatomic) IBOutlet UIButton *XX_btn;
 
 @end
 

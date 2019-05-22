@@ -173,6 +173,19 @@ typedef void(^LabelBlock)(void);
                                        lineIsShow:(BOOL)IS_Show
                                        lineFrame:(CGRect)lineFrame;
 
++ (TT_CustonTF *)TT_ControlToolTextFieldFrame:(CGRect)Frame
+                                  PlaceHolder:(NSString *)placeHolder
+                                  andLifImage:(UIView *)LiftIV
+                                AndRightImage:(UIView *)RightV
+                               LiftImageFrame:(CGRect )LiftVFrame
+                              RightImageFrame:(CGRect )RighVFrame
+                                       AndTag:(NSInteger)tag
+                              AndKeyboardType:(UIKeyboardType)BoardType
+                              clearButtonMode:(UITextFieldViewMode)clearMode
+                             AndReturnKeyType:(UIReturnKeyType)returntype
+                                   lineIsShow:(BOOL)IS_Show
+                                    lineFrame:(CGRect)lineFrame;
+
 /**
  创建UIView
  

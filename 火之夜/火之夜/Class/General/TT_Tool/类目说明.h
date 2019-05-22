@@ -35,7 +35,6 @@
 
 - (void)tt_changeDefauleConfiguration {
     self.Is_hideJuhuazhuan = NO;
-    [self wr_setNavBarShadowImageHidden:NO];
 }
 
 

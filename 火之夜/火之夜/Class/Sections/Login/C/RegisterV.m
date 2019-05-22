@@ -20,6 +20,11 @@
         self.ViewtapClose(-1, @"");
     }
 }
+- (IBAction)yonghuxieyi:(id)sender {
+    if (self.ViewtapClose) {
+        self.ViewtapClose(4, @"");
+    }
+}
 
 - (IBAction)sure:(id)sender {
     NSInteger num;
@@ -47,6 +52,7 @@
     self.password_LAB.text = LOCALIZATION(@"MM");
     self.password_tf.placeholder = LOCALIZATION(@"QSRMM");
     self.phone_tf.placeholder = LOCALIZATION(@"QSRSJH");
+    [self.XX_btn setTitle:LOCALIZATION(@"登录即代表同意《用户协议》") forState:UIControlStateNormal];
     
 }
 

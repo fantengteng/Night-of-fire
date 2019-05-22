@@ -11,13 +11,16 @@
 #import "PhotoCollectionViewCell.h"
 #import "TT_CollectionIMGV.h"
 #import "HZY_UploadFile.h"
+#import "HZY_UITool.h"
 @interface HZY_FabuC ()
 @property (nonatomic , strong) TT_TextView *TextV;
 @property (nonatomic , strong) TT_CollectionIMGV *IMGV;
 @property (nonatomic , strong) UIButton *SureBtn;
 @property (nonatomic , strong) UIButton *Close_btn;
-
+@property (nonatomic , assign) BOOL is_loadtoken;
 @property (nonatomic , strong) HZY_UploadFile *up;
+@property (nonatomic , strong) HZY_UITool *PriceLab;
+@property (nonatomic , strong) HZY_UITool *biaotiLab;
 @end
 
 @implementation HZY_FabuC
@@ -29,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self tt_changeDefauleConfiguration];
-    
+    [self configData];
 }
 
 
@@ -38,33 +41,76 @@
 
 #pragma mark 界面跳转
 
+
 #pragma mark 触发方法
 
 - (void)sure {
-    if ([self.TextV.text isEqualToString:self.TextV.tt_placeholder] || self.TextV.text.length == 0) {
-        [[FTT_HudTool share_FTT_HudTool]CreateHUD:@"发布内容不能为空" AndView:self.view AndMode:MBProgressHUDModeText AndImage:nil AndAfterDelay:1 AndBack:nil];
+    if ([self.TextV.text isEqualToString:self.TextV.tt_placeholder] || self.TextV.text.length == 0 || self.IMGV.selectedPhotos.count == 0) {
+        [[FTT_HudTool share_FTT_HudTool]CreateHUD:LOCALIZATION(@"发布内容不能为空") AndView:self.view AndMode:MBProgressHUDModeText AndImage:nil AndAfterDelay:1 AndBack:nil];
     }else {
-//        [[FTT_HudTool share_FTT_HudTool]CreateHUD:@"正在提交请稍后" AndView:self.view AndMode:MBProgressHUDModeIndeterminate AndImage:nil AndBack:nil];
-//        NSMutableDictionary *dic = [NSMutableDictionary new];
-//        [dic setValue:@"rrr" forKey:@"title"];
-//        [dic setValue:@"1" forKey:@"memberId"];
-//        [dic setValue:@"1" forKey:@"price"];
-//        [dic setValue:@"dddd" forKey:@"discription"];
-//        for (int i = 0 ; i < self.IMGV.selectedPhotos.count; i++) {
-//            [dic setValue:self.IMGV.selectedPhotos[i] forKey:[NSString stringWithFormat:@"%d",i]];
-//        }
-//        [self configDataforNewnetWorkname:imgUploadMARK  params:dic networkClass:[HomeAPI class]];
-  
- 
-        
-
-      
+        [[FTT_HudTool share_FTT_HudTool]CreateHUD:LOCALIZATION(@"正在提交,请稍后") AndView:self.view AndMode:MBProgressHUDModeIndeterminate AndImage:nil AndBack:nil];
+        NSString *token = TakeOut(@"IMG_T");
+        QNConfiguration *config = [QNConfiguration build:^(QNConfigurationBuilder *builder) {
+            builder.zone = [QNFixedZone zone1];
+        }];
+        QNUploadManager *upManager = [[QNUploadManager alloc] initWithConfiguration:config];
+        [self uploadImages:self.IMGV.selectedPhotos atIndex:0 token:token uploadManager:upManager keys:[NSMutableArray new]];
     }
-    
 }
 
 - (void)tap_close {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)uploadImages:(NSArray *)images atIndex:(NSInteger)index token:(NSString *)token uploadManager:(QNUploadManager *)uploadManager keys:(NSMutableArray *)keys{
+    UIImage *image = images[index];
+    __block NSInteger imageIndex = index;
+    NSData *data = UIImageJPEGRepresentation(image, 0.5);
+    NSTimeInterval time= [[NSDate new] timeIntervalSince1970];
+    NSString *filename = [NSString stringWithFormat:@"%@_%ld_%.f.%@",@"status",686734963504054272,time,@"jpg"];
+    [uploadManager  putData:data key:filename token:token
+                  complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
+                      if (info.isOK) {
+                          [keys addObject:[NSString stringWithFormat:@"http://tt.midichan.com/%@",key]];
+                          TT_Log(@"idInex %ld,OK    %@  --------%@",index,info.host,info.serverIp);
+                          TT_Log(@"%@",[NSString stringWithFormat:@"%@%@",info.host,key]);
+                          imageIndex++;
+                          if (imageIndex >= images.count) {
+                              TT_Log(@"上传完成");
+                              NSString *imageURL;
+                              for (int i = 0 ; i < images.count ; i++) {
+                                  
+                                  if (i != 0) {
+                                       imageURL = [NSString stringWithFormat:@"------%@",keys[i]];
+                                  }else {
+                                      imageURL = keys[i];
+                                  }
+                                 
+                              }
+                              if (keys.count == images.count) {
+                                  USER_ID
+                                  NSMutableDictionary *dic = [NSMutableDictionary new];
+                                 
+                                  [dic setValue:[self.biaotiLab.title_str URLEncodedString] forKey:@"title"];
+                                  [dic setValue:usee_id forKey:@"memberId"];
+                                  [dic setValue:self.PriceLab.title_str  forKey:@"price"];
+                                  [dic setValue:[self.TextV.text URLEncodedString]forKey:@"discription"];
+                                  [dic setValue:imageURL forKey:@"imgUrls"];
+                                  [self configDataforNewnetWorkname:fabuProductMARK  params:dic networkClass:[HomeAPI class]];
+                              }
+                              return ;
+                          }
+                          [self uploadImages:images atIndex:imageIndex token:token uploadManager:uploadManager keys:keys];
+                      }else {
+                          TT_Log(@"%@",info.error);
+                      }
+                      
+                  } option:nil];
+    
+   
+
+   
+    
 }
 
          
@@ -72,7 +118,10 @@
 
 - (void)tt_addSubviews {
     self.view.backgroundColor = Col_FFF ;
+    [self setupVM:[HomeVM class]];
     [self.view addSubview:self.Close_btn];
+    [self.view addSubview:self.biaotiLab];
+    [self.view addSubview:self.PriceLab];
     [self.view addSubview:self.TextV];
     [self.view addSubview:self.IMGV];
     [self.view addSubview:self.SureBtn];
@@ -89,28 +138,64 @@
     };
 }
 
+- (void)configData {
+    [self configDataforNewnetWorkname:uploadTokenMarK params:[NSMutableDictionary new] networkClass:[HomeAPI class]];
+}
+
 - (void)tt_changeDefauleConfiguration {
-    self.title = @"发布";
+    self.title = LOCALIZATION(@"发布") ;
     self.Is_hideJuhuazhuan = NO;
 }
 
 - (void)configSuccessTankuang:(NSString *)mark {
-   
+    if ([mark isEqualToString:uploadTokenMarK]) {
+        self.is_loadtoken = YES;
+    }else if ([mark isEqualToString:fabuProductMARK]) {
+        [[FTT_HudTool share_FTT_HudTool]dissmiss];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 #pragma mark 私有方法
+
 
 #pragma mark 存取方法
 
 - (TT_TextView *)TextV {
     if (!_TextV) {
         IPhoneXHeigh
-        _TextV = [[TT_TextView alloc]initWithFrame:CGRectMake(15, securitytop_Y  +15, KScreenWidth - 30, 190)];
+        _TextV = [[TT_TextView alloc]initWithFrame:CGRectMake(15, CGRectGetMaxY(self.biaotiLab.frame) + 10, KScreenWidth - 30, 190)];
         _TextV.backgroundColor = Col_FFF;
-        _TextV.tt_placeholder = @"请输入要发布的内容...";
+        _TextV.layer.cornerRadius = 4;
+        _TextV.layer.borderColor = Col_ECE.CGColor;
+        _TextV.layer.borderWidth = 1;
+        
+        _TextV.tt_placeholder = LOCALIZATION(@"请输入要发布的内容");
     }
     return _TextV;
 }
+
+
+- (HZY_UITool *)PriceLab {
+    if (!_PriceLab) {
+        IPhoneXHeigh
+        _PriceLab = [[HZY_UITool alloc]initWithFrame:CGRectMake(20, securitytop_Y + 15 , KScreenWidth - 30, 50)];
+        [_PriceLab createleftStr:LOCALIZATION(@"价钱")  textfiledplacehold:LOCALIZATION(@"请输入价钱")];
+        _PriceLab.tf.keyboardType =  UIKeyboardTypeNumbersAndPunctuation;
+    }
+    return _PriceLab;
+}
+
+
+- (HZY_UITool *)biaotiLab {
+    if (!_biaotiLab) {
+        IPhoneXHeigh
+        _biaotiLab = [[HZY_UITool alloc]initWithFrame:CGRectMake(20, CGRectGetMaxY(self.PriceLab.frame) + 10 , KScreenWidth - 30, 50)];
+        [_biaotiLab createleftStr:LOCALIZATION(@"标题")  textfiledplacehold:LOCALIZATION(@"请输入标题") ];
+    }
+    return _biaotiLab;
+}
+
 
 - (TT_CollectionIMGV *)IMGV {
     if (!_IMGV) {
@@ -136,11 +221,11 @@
                                                          taeget:self
                                                             sel:@selector(sure)
                                                             tag:0
-                                                       AntTitle:@"发布"
+                                                       AntTitle:LOCALIZATION(@"发布")
                                                       titleFont:16
                                                      titleColor:Col_FFF
                                                        andImage:nil
-                                                   AndBackColor:Col_228
+                                                   AndBackColor:Col_D81
                                         adjustsFontSizesTowidth:NO
                                                   masksToBounds:YES
                                                    conrenRadius:2

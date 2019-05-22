@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "shouye_select.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "shouye_select.png",
       "scale" : "2x"
     },
     {

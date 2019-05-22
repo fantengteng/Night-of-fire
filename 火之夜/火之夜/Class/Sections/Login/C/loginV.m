@@ -12,6 +12,7 @@
 
 /** 时间 */
 @property (nonatomic , assign) CGFloat timeAct;
+@property (weak, nonatomic) IBOutlet UIButton *XX_btn;
 
 @end
 
@@ -20,6 +21,12 @@
 - (IBAction)qiehuan:(id)sender {
     if (self.ViewtapClose) {
         self.ViewtapClose(-1, @"");
+    }
+}
+
+- (IBAction)tapyonghuxieyi:(id)sender {
+    if (self.ViewtapClose) {
+        self.ViewtapClose(4, @"");
     }
 }
 
@@ -38,9 +45,6 @@
         self.ViewtapClose(num, dic);
     }
 }
-- (IBAction)jumpxieyi:(id)sender {
-   
-}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -58,7 +62,9 @@
     self.password_LAB.text = LOCALIZATION(@"MM");
     self.password_tf.placeholder = LOCALIZATION(@"QSRMM");
     self.phone_tf.placeholder = LOCALIZATION(@"QSRSJH");
-    [self.sure_btn setTitle:LOCALIZATION(@"LJZC") forState:UIControlStateNormal];
+    [self.ljzc setTitle:LOCALIZATION(@"LJZC") forState:UIControlStateNormal];
+    [self.sure_btn setTitle:LOCALIZATION(@"YYZHLJDL") forState:UIControlStateNormal];
+    [self.XX_btn setTitle:LOCALIZATION(@"注册即代表同意《用户协议》") forState:UIControlStateNormal];
     
 }
 

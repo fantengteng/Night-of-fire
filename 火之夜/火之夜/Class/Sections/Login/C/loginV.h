@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UITextField *phone_tf;
 @property (weak, nonatomic) IBOutlet UITextField *password_tf;
 @property (weak, nonatomic) IBOutlet UIButton *sure_btn;
+@property (weak, nonatomic) IBOutlet UIButton *ljzc;
 @end
 
 NS_ASSUME_NONNULL_END

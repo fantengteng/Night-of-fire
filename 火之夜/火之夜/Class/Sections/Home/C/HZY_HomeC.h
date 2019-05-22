@@ -1,6 +1,6 @@
 //
 //  HomeC.h
-//  番茄社区
+//  火之夜
 //
 //  Created by linlin dang on 2019/4/25.
 //  Copyright © 2019 FTT. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeC : TT_BaseC
+@interface HZY_HomeC : TT_BaseC
 
 @end
 

@@ -9,6 +9,7 @@
 #import "LoginC.h"
 #import "RegisterV.h"
 #import "loginV.h"
+#import "CurrenC.h"
 @interface LoginC ()
 @property (nonatomic , strong) RegisterV *Regist;
 @property (nonatomic , strong) loginV *Login;
@@ -31,7 +32,10 @@
             [self jumpzhuce:1];
         }else if(num == 0){
             [self configTankuangxinxi];
-        }else {
+        }else if (num == 4) {
+            [self jumpCurreC];
+        }
+        else {
             [self configLogininfo:data];
         }
     };
@@ -42,13 +46,23 @@
             [self jumpzhuce:0];
         }else if(num == 0){
             [self configTankuangxinxi];
-        }else {
+        }else if (num == 4) {
+            [self jumpCurreC];
+        }
+        
+        else {
             [self configRegistinfo:data];
         }
     };
 }
 
 #pragma mark 界面跳转
+
+- (void)jumpCurreC {
+    CurrenC *CC = [[CurrenC alloc]init];
+    CC.web_url = @"http://www.pozhu.com/huo.html";
+    [self.navigationController pushViewController:CC animated:YES];
+}
 
 #pragma mark 触发方法
 

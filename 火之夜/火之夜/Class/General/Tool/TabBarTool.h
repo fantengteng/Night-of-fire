@@ -17,8 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic , copy) void(^ViewtapClose)(NSInteger num, id data);
 + (instancetype)Share_TabBarTool;
 - (void)CreateTabBar;
-- (void)CreateLoginC;
-- (void)panduanshifoudenglu;
+- (void)CreateLoginC:(UIViewController *)C;
 - (void)islogin:(UIViewController *)V Close:(void(^)(void))Close ;
 - (void)configisLoginv:(UIViewController *)V ;
 @end

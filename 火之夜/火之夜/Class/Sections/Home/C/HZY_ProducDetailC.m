@@ -9,6 +9,7 @@
 #import "HZY_ProducDetailC.h"
 #import "HZY_ProductInfoModel.h"
 #import "HZY_ProducTableV.h"
+#import "HZY_OrderPayInterfaceC.h"
 @interface HZY_ProducDetailC ()
 @property (nonatomic , strong) HZY_ProducTableV *TableV;
 @end
@@ -27,30 +28,29 @@
 
 #pragma mark 界面跳转
 
+- (void)jump_OrderPayInterfaceC {
+    HZY_OrderPayInterfaceC *OC = [[HZY_OrderPayInterfaceC alloc]init];
+    OC.Model = self.Model;
+    [self.navigationController pushViewController:OC animated:YES];
+}
+
 #pragma mark 触发方法
 
 - (void)Tap {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)Tap_Close {
+    [self jump_OrderPayInterfaceC];
+}
+
 #pragma mark 公开方法
 
 - (void)tt_addSubviews {
     IPhoneXHeigh
-    [self setupTableV:[HZY_ProducTableV class] Frame:CGRectMake(0, securitytop_Y, KScreenWidth, security_H)];
-    
+    [self setupTableV:[HZY_ProducTableV class] Frame:CGRectMake(0, securitytop_Y, KScreenWidth, security_H - 50)];
     [self.TableV configDataNew:[NSMutableArray arrayWithObject:self.Model] has_more:NO];
 
-}
-
-
-- (void)confiitme {
-    IPhoneXHeigh
-    UIImage *image =  [UIImage imageNamed:@"fanhui"] ;
-    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIButton *btn = [TT_ControlTool FTT_ControlToolUIButtonFrame:CGRectMake(20, securitytop_Y - 44, 44, 44) taeget:self sel:@selector(Tap) tag:0 AntTitle:@"" titleFont:0 titleColor:nil andImage:@"fanhui" AndBackColor:nil adjustsFontSizesTowidth:NO masksToBounds:NO conrenRadius:0 BorderColor:nil BorderWidth:0 ContentHorizontalAligment:0]
-    ;
-    [self.view addSubview:btn];
 }
 
 
@@ -58,7 +58,24 @@
 
 - (void)tt_changeDefauleConfiguration {
     self.Is_hideJuhuazhuan = NO;
-    [self wr_setNavBarShadowImageHidden:NO];
+    IPhoneXHeigh
+    UIButton *Btn = [TT_ControlTool FTT_ControlToolUIButtonFrame:CGRectMake(0, KScreenHeight - securityBottom_H - 50, KScreenWidth, 50)
+                                                          taeget:self
+                                                             sel:@selector(Tap_Close)
+                                                             tag:0
+                                                        AntTitle:LOCALIZATION(@"我想要") 
+                                                       titleFont:16
+                                                      titleColor:Col_FFF
+                                                        andImage:Nil
+                                                    AndBackColor:Col_D81
+                                         adjustsFontSizesTowidth:NO
+                                                   masksToBounds:NO
+                                                    conrenRadius:0
+                                                     BorderColor:nil
+                                                     BorderWidth:0
+                                       ContentHorizontalAligment:0];
+    Btn.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+    [self.view addSubview:Btn];
 }
 
 #pragma mark 存取方法

@@ -206,8 +206,6 @@
     }
     [self.Data addObjectsFromArray:Data];
     [self configIstoweer];
-    self.dataSource                     = self;
-    self.delegate                       = self;
     [self endRefresh];
     
 }
@@ -230,7 +228,8 @@
     self.showsVerticalScrollIndicator   = NO;
     self.showsHorizontalScrollIndicator = NO;
     self.userInteractionEnabled         = YES;
-
+    self.dataSource                     = self;
+    self.delegate                       = self;
     self.decelerationRate               = UIScrollViewDecelerationRateNormal;
     self.LineSpace                      = 0;
     self.InteritemSpace                 = 0;

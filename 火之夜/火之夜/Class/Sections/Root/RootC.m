@@ -1,6 +1,6 @@
 //
 //  RootC.m
-//  番茄社区
+//  火之夜
 //
 //  Created by linlin dang on 2019/4/25.
 //  Copyright © 2019 FTT. All rights reserved.
@@ -26,27 +26,11 @@
 
 #pragma mark 界面跳转
 
-- (void)JumpTabbar {
-    [[TabBarTool Share_TabBarTool]CreateTabBar];
-}
-
-- (void)jumpLogin {
-    [[TabBarTool Share_TabBarTool]CreateLoginC];
-}
-
 
 #pragma mark 触发方法
 
 - (void)jumpTT {
-    [FTT_Helper CreateTitle:@"提示"
-                    message:@"登录还是首页"
-               CantionTitle:@"登录"
-                       Sure:@"首页" preferredStyle:UIAlertControllerStyleAlert
-                     SureAC:^{
-                         [self JumpTabbar];
-                     } NoAC:^{
-                         [self jumpLogin];
-                     } ViewController:self];
+    [[TabBarTool Share_TabBarTool]CreateTabBar];
 }
 
 

@@ -96,9 +96,18 @@
     ///设置监听，监听对text的赋值操作情况的处理
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(text)) options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     
+   
+    UIView *TOOL = [TT_ControlTool FTT_ControlToolUIViewFrame:CGRectMake(0, 0, KScreenWidth, 40) BackgroundColor:Col_F6F MasksToBounds:NO ConrenrRadius:0];
+    UIButton *btn = [TT_ControlTool FTT_ControlToolUIButtonFrame:CGRectMake(KScreenWidth - 80, 0, 80, 40) taeget:self sel:@selector(tapclose) tag:0 AntTitle:@"确定" titleFont:14 titleColor:Col_D81 andImage:@"NONONO" AndBackColor:nil adjustsFontSizesTowidth:NO masksToBounds:NO conrenRadius:0 BorderColor:nil BorderWidth:0 ContentHorizontalAligment:0];
+    [TOOL addSubview:btn];
+    [self setInputAccessoryView:TOOL];
     
 }
 
+- (void)tapclose {
+    
+    [self resignFirstResponder];
+}
 #pragma mark 存取方法
 
 

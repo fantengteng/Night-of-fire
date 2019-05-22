@@ -52,7 +52,7 @@ static char baseVM;
 
 - (void)configNothingVis_hide:(BOOL)YorN {
     if (YorN) {
-        [self.NothingV removeAllSubviews];
+        [self.NothingV removeFromSuperview];
     }else {
         [self setupNothingV];
     }
@@ -61,7 +61,7 @@ static char baseVM;
 
 - (void)RequstFailTankuangMarK:(NSString *)MarK {
     if (((self.TableV && self.TableV.Page == DefaultPAGE) || (self.CollectionV && self.CollectionV.Page == DefaultPAGE ))) {
-        [self setupNothingVforImgaeName:@"requsetshibai"
+        [self setupNothingVforImgaeName:@"jiazaishibai"
                               titleName:@"加载失败，点击刷新"
                                   Frame:self.view.bounds
                                  is_Tap:YES];

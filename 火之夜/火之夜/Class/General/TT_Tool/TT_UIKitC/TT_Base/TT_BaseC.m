@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
     self.view.backgroundColor = Col_F6F;
     [self tt_addSubviews];
     [self tt_bindViewModel];
@@ -131,6 +130,24 @@
     [self wr_setNavBarShadowImageHidden:YES];
 }
 
+/// 点击空数据界面出发方法
+- (void)TapNothingTriggermethod:(NSString *)Str {
+    [self configData];
+}
+
+
+- (void)configFailTankuang:(NSString *)mark {
+    [[FTT_HudTool share_FTT_HudTool]CreateHUD:@"加载失败,请重试!!!" AndView:self.view AndMode:MBProgressHUDModeText AndImage:@"NONONO" AndAfterDelay:1 AndBack:nil];
+}
+
+- (void)loadSuccessDataconversionallData:(id)Alldata Data:(id)Data has_more:(BOOL)has_more mark:(NSString *)mark {
+    [super loadSuccessDataconversionallData:Alldata
+                                       Data:Data has_more:has_more mark:mark];
+    self.Is_hideJuhuazhuan = NO;
+   
+}
+
+
 #pragma mark 私有方法
 - (void)CreateBack {
     UIImage *image =  [UIImage imageNamed:@"fanhui"] ;
@@ -149,7 +166,7 @@
 
 - (void)setIs_hideJuhuazhuan:(BOOL)Is_hideJuhuazhuan {
     if (Is_hideJuhuazhuan) {
-        [[FTT_HudTool share_FTT_HudTool]CreateHUD:@"加载数据中..."
+        [[FTT_HudTool share_FTT_HudTool]CreateHUD:LOCALIZATION(@"加载中")
                                           AndView:self.view
                                           AndMode:MBProgressHUDModeIndeterminate
                                          AndImage:nil

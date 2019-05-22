@@ -53,7 +53,7 @@
     _sessionManager.requestSerializer.timeoutInterval = 20;
     //设置响应序列化器，解析Json对象
     AFJSONResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingMutableContainers];
-    responseSerializer.acceptableContentTypes = [NSSet setWithObjects:  @"application/x-javascript", @"application/json", @"text/json", @"text/javascript", @"text/html",@"text/plain", nil];
+    responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/x-javascript", @"application/json", @"text/json", @"text/javascript", @"text/html",@"text/plain", nil];
     _sessionManager.responseSerializer = responseSerializer;
     // 设置安全策略
     self.sessionManager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];;
@@ -105,7 +105,9 @@
     [self formatRequestHeader];
     //  分离URL中的参数信息, 重建参数列表
     params = [self formatParametersForURL:url withParams:params];
+    TT_Log(@"%@",params);
     url = [url componentsSeparatedByString:@"?"][0];
+    TT_Log(@"%@",url);
     __block NSURLSessionDataTask * urlSessionDataTask;
     if (requestType == FTT_APIManagerRequestTypePOST)  // Post 请求
     {

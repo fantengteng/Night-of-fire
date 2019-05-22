@@ -34,6 +34,7 @@
 #pragma mark 公开方法
 
 - (void)tt_setupViews {
+    self.backgroundColor = [UIColor whiteColor];
     [self.layer addSublayer:self.ImageLayer];
     [self.layer addSublayer:self.textLayer];
     [self tt_setupViewsFrame];
@@ -76,7 +77,7 @@
 - (CATextLayer *)textLayer {
     if (!_textLayer) {
         _textLayer = [TT_ControlTool FTT_ControlToolCATextLayerFrame:CGRectZero
-                                                            AndTitle:@"空空如也"
+                                                            AndTitle:LOCALIZATION(@"空空如也") 
                                                          AndFontSize:14
                                                   AndForegroundColor:[UIColor getColor:@"#666666"]
                                                    AndTruncationMode:kCATruncationEnd];

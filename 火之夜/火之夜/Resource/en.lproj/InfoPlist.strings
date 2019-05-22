@@ -7,13 +7,85 @@
 */
 
 CFBundleDisplayName = "Night of fire";
+NSCameraUsageDescription =
+"Night of fire requires your consent to access the camera and upload photo information through the camera.";
+NSPhotoLibraryUsageDescription = "Night of fire requires your consent to access the album and upload photo information through the album.";
+"首页" = "Home page";
+"XX"  = "Fresh";
+"RM"  = "Hot";
 
-"首页" = "Home";
-"消息" = "NewS";
-"资讯" = "Info";
-"我的" = "My";
-"LJDL" = "Login immediately";
-"SJH" = "手机号";
-"MM" = "密码";
-"ZC" = "注册";
 
+
+"消息" = "News";
+"资讯" = "Information";
+
+
+"我的" = "Mine";
+"WDGM" = "My Purchase";
+"WDFB" = "My release";
+"SHDZ" = "Receiving address";
+"SZ" = "Setting";
+"WDHB" = "My red envelope";
+"添加" = "Add";
+"设为默认地址" = "Set default address";
+"编辑" = "Editor";
+"删除" = "Delete";
+"很开心,写点什么" = "Very happy, write something";
+"我想要" = "I want";
+"购买宝贝" = "Buy baby";
+"运费" = "freight";
+"收货地址" = "Receiving address";
+
+
+
+"请添加新地址" = "Please add a new address";
+"红包" = "Red envelopes";
+"暂无可用红包" = "Please choose red envelope";
+"实付款" = "Actual payment";
+"确定" = "Sure";
+"发布" = "Release";
+"价钱" = "price";
+"标题" = "Title";
+"请输入价钱" = "Please enter the price.";
+"请输入标题" = "Please enter the title";
+"请输入要发布的内容" = "Please enter what you want to publish";
+"正在提交,请稍后" = "Submitting, please wait a moment.";
+"发布内容不能为空" = "Publishing content cannot be empty";
+
+
+"提示" = "Tips";
+"取消" = "cancel";
+"需要登录，才能使用此功能" = "You need to log in to use this feature";
+"加载中" = "Loading...";
+"加载失败,请重试!!!" = "Load failed, please try again!!!";
+"版本信息" = "Version information";
+"清理缓存" = "Clear cache";
+"服务协议" = "Service agreement";
+"正在清理缓存" = "Clearing Cache>>>";
+"清理成功" = "Cleanup success";
+"退出登录" = "Logout";
+"无门槛消费（全场通用）" = "No Threshold Consumption";
+"昵称" = "Nickname";
+"头像" = "Head portrait";
+"正在提交，请稍后" = "Submitting, please wait a moment.";
+"空空如也" = "Absolutely empty";
+
+
+"LJDL" = "Log in now";
+"SJH" = "Phone";
+"MM" = "Password";
+"ZC" = "Registration";
+"DL" = "Login";
+"ZCJDBTY" = "Registration means consent to the user agreement";
+"QSRSJH" = "Please enter your cell phone number";
+"QSRMM" = "Please enter your password.";
+"MYZHLJZC" = "No account? Immediate registration.";
+"YYZHLJDL" = "Register your existing account immediately";
+"ZCJS" = "Register and send 888 yuan red envelope";
+"LJZC" = "Register immediately";
+"请输入相应的信息" = "Please enter the appropriate information";
+"请求失败，请重试" = "If the request fails, please try again";
+"注册成功,请登录" = "Register successfully, please login";
+"登录成功" = "Log on Successfully";
+"登录即代表同意《用户协议》" = "Login means consent《User agreement》";
+"注册即代表同意《用户协议》" = "Registration means consent of the representative《User agreement》";

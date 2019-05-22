@@ -11,6 +11,31 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HZY_MyaddressModel : NSObject
+//{
+//    "address": "海南省海口市平安大街1号平安大厦2楼",
+//    "mobile": "15203665555",
+//    "id": 10,
+//    "default": 1,
+//    "memberId": 11,
+//    "name": "李斯"
+//},
+
+
+@property (nonatomic , copy) NSString *address;
+
+@property (nonatomic , copy) NSString *mobile;
+
+@property (nonatomic , assign) NSInteger ID;
+
+@property (nonatomic , assign) NSInteger Default;
+
+@property (nonatomic , assign) NSInteger memberId;
+
+@property (nonatomic , copy) NSString *name;
+
+@property (nonatomic , copy) NSString *httpUrl;
+
+
 
 @end
 

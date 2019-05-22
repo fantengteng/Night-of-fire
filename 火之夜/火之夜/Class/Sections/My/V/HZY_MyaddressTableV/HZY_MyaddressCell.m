@@ -30,9 +30,9 @@
 }
 
 
-- (void)configBtnState:(NSString *)YorN {
+- (void)configBtnState:(NSInteger)YorN {
     NSString *IMAGE_Name;
-    if ([YorN isEqualToString:@"NO"]) {
+    if (YorN == 0) {
         IMAGE_Name = @"WXZ";
     }else {
         IMAGE_Name = @"XZ";
@@ -45,9 +45,9 @@
 
 - (void)configData:(HZY_MyaddressModel *)Data {
     
-//    self.name_lab.text = Data.receiverName;
-//    self.phone_lab.text = Data.receiverPhone;
-    NSMutableAttributedString *content = [[NSMutableAttributedString alloc]initWithString:@"dddsdsdsadasdasdsadsdsadasdsadsadasdsadsadsdasdasdasdasdadasdasdsdasdasdasd"];
+    self.name_lab.text = Data.name;
+    self.phone_lab.text = Data.mobile;
+    NSMutableAttributedString *content = [[NSMutableAttributedString alloc]initWithString:Data.address];
     content.lineSpacing = 5;
     content.color       = Col_666;
     content.font        = [UIFont systemFontOfSize:12];
@@ -66,7 +66,7 @@
     self.setAddress_btn.sd_layout
     .leftEqualToView(self.BG)
     .topSpaceToView(self.line, 0)
-    .widthIs(120)
+    .widthIs(140)
     .heightIs(44);
     
     self.delete_btn.sd_layout
@@ -84,7 +84,7 @@
     self.BG.sd_layout
     .heightIs(49 + layout1.textBoundingSize.height + 19 + 44);
     
-    [self configBtnState:@"NO"];
+    [self configBtnState:Data.Default];
     [self setupAutoHeightWithBottomView:self.BG bottomMargin:10];
 }
 
@@ -278,7 +278,7 @@
                                                        AndTitleAndImageType:UIButtonTitleAndImageTypeLift
                                                                   AndImageW:20
                                                                      ImageH:20
-                                                                     TitleW:84
+                                                                     TitleW:120
                                                                      TitleH:44
                                                                    AndImage:[UIImage imageNamed:@"Oval Copy"] title:LOCALIZATION(@"设为默认地址")
                                                                  titleColor:Col_666

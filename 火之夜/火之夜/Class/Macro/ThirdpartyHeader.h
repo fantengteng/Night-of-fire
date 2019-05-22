@@ -17,4 +17,5 @@
 #import <SDAutoLayout/SDAutoLayout.h>
 #import <YYKit/YYKit.h>
 #import <SAMKeychain/SAMKeychain.h>
+#import <QiniuSDK.h>
 #endif /* ThirdpartyHeader_h */

@@ -1,6 +1,6 @@
 //
 //  CurreryinfoV.m
-//  番茄社区
+//  火之夜
 //
 //  Created by linlin dang on 2019/4/25.
 //  Copyright © 2019 FTT. All rights reserved.
@@ -32,7 +32,9 @@
 
 - (void)configheaderImageName:(NSString *)ImageName nameStr:(NSString *)nameStr timeStr:(NSString *)timeStr {
     if (ImageName) {
-        [self.HeaderIMG setImageWithURL:[NSURL URLWithString:ImageName] placeholder:[UIImage imageNamed:@"NONONO"] options:YYWebImageOptionProgressive manager:[Create_Tool ImageManager] progress:nil transform:nil completion:nil];
+        [self.HeaderIMG setImageWithURL:[NSURL URLWithString:ImageName] placeholder:[UIImage imageNamed:@"NONONO"] options:YYWebImageOptionProgressive manager:[Create_Tool ImageManager] progress:nil transform:^UIImage * _Nullable(UIImage * _Nonnull image, NSURL * _Nonnull url) {
+            return [image imageWithRadius:4 rectSize:CGSizeMake(45, 45)];
+        } completion:nil];
     }
     
     if (nameStr) {
@@ -67,16 +69,7 @@
     .topSpaceToView(self, 0)
     .widthIs(45)
     .heightIs(45);
-    
-    CALayer *avatarBorder = [CALayer layer];
-    avatarBorder.frame = self.HeaderIMG.bounds;
-    avatarBorder.borderWidth = CGFloatFromPixel(1);
-    avatarBorder.borderColor = [UIColor colorWithWhite:0.000 alpha:0.090].CGColor;
-    avatarBorder.cornerRadius = self.HeaderIMG.height / 2;
-    avatarBorder.shouldRasterize = YES;
-    avatarBorder.rasterizationScale = kScreenScale;
-    [self.HeaderIMG.layer addSublayer:avatarBorder];
-    
+        
     self.Name_LAB.sd_layout
     .leftSpaceToView(self.HeaderIMG, 13)
     .rightSpaceToView(self, 80)
@@ -97,8 +90,6 @@
 - (UIImageView *)HeaderIMG {
     if (!_HeaderIMG) {
         _HeaderIMG = [[UIImageView alloc]init];
-        _HeaderIMG.size = CGSizeMake(45, 45);
-        [_HeaderIMG.image imageWithRadius:22.5 rectSize:CGSizeMake(45, 45)];
     }
     return _HeaderIMG;
 }

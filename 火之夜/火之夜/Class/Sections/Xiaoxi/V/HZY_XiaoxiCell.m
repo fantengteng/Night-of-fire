@@ -24,7 +24,7 @@
 
 - (void)configData:(HZY_XiaoxiModel *)Data {
     self.Name_Lab.text = Data.title;
-    self.title_Lab.text = Data.content;
+    self.title_Lab.text = Data.createtime;
     [self.IMG setImageWithURL:[NSURL URLWithString:Data.msgImg]
                          placeholder:nil
                              options:YYWebImageOptionProgressive

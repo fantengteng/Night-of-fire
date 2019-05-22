@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HZY_XinxianC : PZ_EditChildC
 @property (nonatomic , copy) void(^Currey)(id model);
+@property (nonatomic , copy) void(^loadSuccess)();
 @end
 
 NS_ASSUME_NONNULL_END

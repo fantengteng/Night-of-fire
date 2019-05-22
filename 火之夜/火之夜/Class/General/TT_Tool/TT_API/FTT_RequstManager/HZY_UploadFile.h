@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HZY_UploadFile : NSObject
-- (void)uploadFileWithURL:(NSURL *)url imageDic:(NSDictionary *)imgDic pramDic:(NSDictionary *)pramDic;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

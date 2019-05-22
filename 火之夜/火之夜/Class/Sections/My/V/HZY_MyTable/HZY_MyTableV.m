@@ -60,7 +60,7 @@
 #pragma mark 私有方法
 
 - (void)changeDefaultConfigguration {
-    self.headeV = [[HZY_HeaderV alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, 220)];
+    self.headeV = [[HZY_HeaderV alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, 120)];
     self.tableHeaderView = self.headeV;
     @weakify(self)
     self.headeV.ViewtapClose = ^(NSInteger num, id  _Nonnull data) {
@@ -70,7 +70,7 @@
         }
     };
 
-    _arr_title = [NSMutableArray arrayWithArray:@[LOCALIZATION(@"WDGM"),LOCALIZATION(@"WDFB"),LOCALIZATION(@"SHDZ"),LOCALIZATION(@"SZ"),]];
+    _arr_title = [NSMutableArray arrayWithArray:@[LOCALIZATION(@"WDGM"),LOCALIZATION(@"WDFB"),LOCALIZATION(@"WDHB"),LOCALIZATION(@"SHDZ"),LOCALIZATION(@"SZ"),]];
 }
 
 

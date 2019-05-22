@@ -7,10 +7,12 @@
 //
 
 #import "HZY_XiaoxiC.h"
-#import "HZY_xiaoxiTableV.h"
+
+#import "HZY_XiaoxiDetailC.h"
 #import "HZY_FabuC.h"
-@interface HZY_XiaoxiC ()
-@property (nonatomic , strong) HZY_xiaoxiTableV *TableV;
+#import "MagicMoveAnimator.h"
+@interface HZY_XiaoxiC ()<UINavigationControllerDelegate>
+
 @end
 
 @implementation HZY_XiaoxiC
@@ -22,7 +24,46 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.delegate = self;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSString *MAT_page = [NSString stringWithFormat:@"%s",object_getClassName(self)];
+    TT_Log(@"%@",MAT_page);
+    if (![MAT_page isEqualToString:@"HZY_FabuC"] ||![MAT_page isEqualToString:@"HZY_XinxianC"] ||![MAT_page isEqualToString:@"HZY_RemenC"]) {
+        @weakify(self)
+        [TabBarTool Share_TabBarTool].ViewtapClose = ^(NSInteger num, id  _Nonnull data) {
+            @strongify(self)
+            [[TabBarTool Share_TabBarTool]configisLoginv:self];
+            [self JumpController:[[HZY_FabuC alloc]init]];
+        };
+    }
+}
+
 #pragma mark 回调协议
+
+#pragma mark - UINavigationControllerDelegate
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC{
+    if ([toVC isKindOfClass:[HZY_XiaoxiDetailC class]] && operation == UINavigationControllerOperationPush) {
+        MagicMoveAnimator *transition = [MagicMoveAnimator initWithType:AnimationTypePush];
+        return transition;
+    }else{
+        return nil;
+    }
+}
+
+
+- (void)tapcellTriggereventIndex:(NSIndexPath *)index model:(id)model {
+    HZY_XiaoxiDetailC *DC = [[HZY_XiaoxiDetailC alloc]init];
+    DC.model = model;
+    [self.navigationController pushViewController:DC animated:YES];
+}
 
 #pragma mark 界面跳转
 
@@ -46,12 +87,6 @@
 
 #pragma mark 私有方法
 
-- (void)tt_changeDefauleConfiguration {
-    self.Is_hideJuhuazhuan = NO;
-    self.TableV.is_refreshfoot = YES;
-    self.TableV.is_refreshHeader = YES;
-    [self wr_setNavBarShadowImageHidden:NO];
-}
 
 
 #pragma mark 存取方法

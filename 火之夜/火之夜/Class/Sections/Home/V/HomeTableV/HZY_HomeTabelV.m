@@ -59,11 +59,12 @@
     self.pageTableView.tabItemX        = 20;
     self.pageTableView.tabSize         = CGSizeMake(KScreenWidth - 40, 55);
     self.pageTableView.titleStyle      = XXPageTabTitleStyleDefault;
-    self.pageTableView.indicatorWidth  = 0;
+    self.pageTableView.indicatorWidth  = 20;
     self.pageTableView.tabItemFont     = [UIFont systemFontOfSize:16];
     self.pageTableView.indicatorStyle  = XXPageTabTitleStyleDefault;
     self.pageTableView.unSelectedColor = Col_666;
     self.pageTableView.selectedColor   = Col_D81;
+
     self.delegate = self;
     self.dataSource = self;
     [self reloadData];
@@ -72,7 +73,7 @@
 
 - (HZY_HomeBannerV *)bannerV {
     if (!_bannerV) {
-        _bannerV = [[HZY_HomeBannerV alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, 147)];
+        _bannerV = [[HZY_HomeBannerV alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, (KScreenWidth - 20) / 25 * 9  + 20)];
     }
     return _bannerV;
 }

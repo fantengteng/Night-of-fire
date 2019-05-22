@@ -9,7 +9,7 @@
 #import "TabBarTool.h"
 #import "AppDelegate.h"
 #import "JMTabBarController.h"
-#import "HomeC.h"
+#import "HZY_HomeC.h"
 #import "MyC.h"
 #import "LoginC.h"
 #import "HZY_XiaoxiC.h"
@@ -48,25 +48,17 @@
     return TT;
 }
 
-- (void)panduanshifoudenglu {
-    USER_ID
-    if ([usee_id integerValue] == 0) {
-        [[TabBarTool Share_TabBarTool]CreateLoginC];
-    }else {
-        [[TabBarTool Share_TabBarTool]CreateTabBar];
-    }
-}
 
 - (void)configisLoginv:(UIViewController *)V {
     USER_ID
     if ([usee_id integerValue] == 0) {
-        [FTT_Helper CreateTitle:@"提示"
-                        message:@"需要登录，才能使用此功能"
-                   CantionTitle:@"取消"
-                           Sure:@"登录"
+        [FTT_Helper CreateTitle:LOCALIZATION(@"提示")
+                        message:LOCALIZATION(@"需要登录，才能使用此功能")
+                   CantionTitle:LOCALIZATION(@"取消")
+                           Sure:LOCALIZATION(@"DL")
                  preferredStyle:UIAlertControllerStyleAlert
                          SureAC:^{
-                             [[TabBarTool Share_TabBarTool]CreateLoginC];
+                            [[TabBarTool Share_TabBarTool]CreateLoginC:V];
                          } NoAC:^{
                              
                          } ViewController:V];
@@ -77,13 +69,13 @@
 - (void)islogin:(UIViewController *)V Close:(void(^)(void))Close {
     USER_ID
     if ([usee_id integerValue] == 0) {
-        [FTT_Helper CreateTitle:@"提示"
-                        message:@"需要登录，才能使用此功能"
-                   CantionTitle:@"取消"
-                           Sure:@"登录"
+        [FTT_Helper CreateTitle:LOCALIZATION(@"提示")
+                        message:LOCALIZATION(@"需要登录，才能使用此功能")
+                   CantionTitle:LOCALIZATION(@"取消")
+                           Sure:LOCALIZATION(@"DL")
                  preferredStyle:UIAlertControllerStyleAlert
                          SureAC:^{
-                             [[TabBarTool Share_TabBarTool]CreateLoginC];
+                               [[TabBarTool Share_TabBarTool]CreateLoginC:V];
                          } NoAC:^{
                              
                          } ViewController:V];
@@ -95,13 +87,11 @@
 }
 
 
-- (void)CreateLoginC {
+- (void)CreateLoginC:(UIViewController *)C {
     LoginC *LC = [[LoginC alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:LC];
-    AppDelegate* appDelagete = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    appDelagete.window.rootViewController = nav;
+    [C.navigationController pushViewController:LC animated:YES];
+    
 }
-
 - (void)CreateTabBar {
     [Localisator sharedInstance];
     JMConfig *config = [JMConfig config];
@@ -117,7 +107,7 @@
     NSMutableArray *imageSelectedArr = [NSMutableArray arrayWithObjects:@"shouye_select",@"xiaoxi_select",@"zixun_select",@"My_select", nil];
     NSMutableArray *controllersArr = [NSMutableArray array];
     
-    HomeC *firstViewController = [[HomeC alloc] init];
+    HZY_HomeC *firstViewController = [[HZY_HomeC alloc] init];
     UIViewController *firstNavigationController = [[TT_BaseNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     

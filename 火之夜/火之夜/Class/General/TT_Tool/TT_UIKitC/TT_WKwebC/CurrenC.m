@@ -23,7 +23,7 @@
 
 - (void)initSubViewS {
     [super initSubViewS];
-    
+    IPhoneXHeigh
     self.Web.wkweb_url = self.web_url;
     [self.Web loadRefare];
 }

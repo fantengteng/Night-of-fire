@@ -76,10 +76,8 @@
 #pragma mark 私有方法
 
 - (void)tt_changeDefauleConfiguration {
-    self.Is_hideJuhuazhuan = NO;
     self.TableV.is_refreshfoot = YES;
     self.TableV.is_refreshHeader = YES;
-    [self wr_setNavBarShadowImageHidden:NO];
 }
 
 

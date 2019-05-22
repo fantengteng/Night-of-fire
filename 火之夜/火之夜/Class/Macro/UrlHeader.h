@@ -11,10 +11,10 @@
 #define UrlHeader_h
 
 
-//#define PZ_Header      @"http://180.76.187.247:8080/appcenter/app/"
+#define PZ_Header      @"http://180.76.187.247:8080/appcenter/app/"
 
 
-#define PZ_Header   @"http://192.168.1.218:8080/appcenter/app/"
+//#define PZ_Header   @"http://192.168.1.218:8080/appcenter/app/"
 
 /// === 注册 === ///
 
@@ -38,6 +38,21 @@
 #define fabuProductMARK @"fabuProduct"
 
 #define imgUploadMARK @"imgUpload"
+
+#define uploadTokenMarK @"uploadToken"
+
+#define queryAddrsMARK @"queryAddrs"
+
+#define addAddressMARK @"addAddress"
+
+#define updateAddrIsDefaultMARK @"updateAddrIsDefault"
+
+#define deleteAddressMARK @"deleteAddress"
+
+#define updateAddressMARK @"updateAddress"
+
+#define updateNickNameMARK @"updateNickName"
+
 
 
 

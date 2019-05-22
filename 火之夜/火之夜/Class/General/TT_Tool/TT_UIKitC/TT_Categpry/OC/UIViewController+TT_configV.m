@@ -39,6 +39,8 @@ static char Noting;
     
 }
 
+
+
 #pragma mark 公开方法
 
 - (void)setupTableV:(Class)TableV {
@@ -117,7 +119,7 @@ static char Noting;
 }
 
 - (void)setupNothingVis_tap:(BOOL)is_tap {
-    [self setupNothingVforImgaeName:@"kong" titleName:@"空空如也" Frame:self.view.bounds is_Tap:is_tap];
+    [self setupNothingVforImgaeName:@"kong" titleName:LOCALIZATION(@"空空如也")  Frame:self.view.bounds is_Tap:is_tap];
 }
 
 - (void)setupNothingVforImgaeName:(NSString *)Imagename

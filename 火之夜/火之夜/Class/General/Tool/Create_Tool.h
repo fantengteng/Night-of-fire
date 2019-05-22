@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,9 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (YYWebImageManager *)ImageManager;
 
++ (YYWebImageManager *)ImageManagerSS;
+
 + (YYWebImageManager *)avatarImageManager;
 
 + (void)PostJsonForURL:(NSString *)URL parameters:(id)parameters compleSuccess:(void(^)(id  _Nullable responseObject))Success fail:(void(^)(NSError * _Nullable error))fail;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

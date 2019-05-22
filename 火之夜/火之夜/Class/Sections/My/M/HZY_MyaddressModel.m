@@ -9,5 +9,7 @@
 #import "HZY_MyaddressModel.h"
 
 @implementation HZY_MyaddressModel
-
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{@"ID":@"id",@"Default":@"default"};
+}
 @end

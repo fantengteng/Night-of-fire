@@ -269,6 +269,39 @@
     return tf;
 }
 
++ (TT_CustonTF *)TT_ControlToolTextFieldFrame:(CGRect)Frame
+                                  PlaceHolder:(NSString *)placeHolder
+                                  andLifImage:(UIView *)LiftIV
+                                AndRightImage:(UIView *)RightV
+                               LiftImageFrame:(CGRect )LiftVFrame
+                              RightImageFrame:(CGRect )RighVFrame
+                                       AndTag:(NSInteger)tag
+                              AndKeyboardType:(UIKeyboardType)BoardType
+                              clearButtonMode:(UITextFieldViewMode)clearMode
+                             AndReturnKeyType:(UIReturnKeyType)returntype
+                                   lineIsShow:(BOOL)IS_Show
+                                    lineFrame:(CGRect)lineFrame {
+    TT_CustonTF *tf    = [[TT_CustonTF alloc]initWithFrame:Frame];
+    tf.placeholder     = placeHolder;
+    tf.keyboardType    = BoardType;
+    tf.clearButtonMode = clearMode;
+    tf.returnKeyType   = returntype;
+    tf.tag             = tag;
+    if (LiftIV) {
+        tf.leftView       = LiftIV;
+        tf.leftViewMode   = UITextFieldViewModeAlways;
+    }
+    if (RightV) {
+        tf.rightView       = RightV;
+        tf.rightViewMode   = UITextFieldViewModeAlways;
+    }
+    if (IS_Show) {
+        [tf.layer addSublayer:[TT_ControlTool FTT_ControlToolCALayerFrame:lineFrame AndImageName:nil AndBackgtoundColor:[UIColor getColor:@"#ededed"] BorderColor:nil BorderWidth:0 masksToBounds:NO corerRadius:0]];
+    }
+    return tf;
+    
+}
+
 
 + (UIView *)FTT_ControlToolUIViewFrame:(CGRect)Frame
                        BackgroundColor:(UIColor *)Backgroundcolor

@@ -1,6 +1,6 @@
 //
 //  HomeBannerV.m
-//  番茄社区
+//  火之夜
 //
 //  Created by linlin dang on 2019/4/25.
 //  Copyright © 2019 FTT. All rights reserved.
@@ -26,7 +26,7 @@
 - (__kindof ZKCycleScrollViewCell *)cycleScrollView:(ZKCycleScrollView *)cycleScrollView cellForItemAtIndex:(NSInteger)index {
     HZY_MallBannerCell *cell = [cycleScrollView dequeueReusableCellWithReuseIdentifier:@"Cellbanner" forIndex:index];
     HZY_BannerModel *model = self.Banner[index];
-    cell.imageURL = [NSURL URLWithString:model.picurl];
+    cell.imageURL = [NSURL URLWithString:[[[NSString alloc]init] base64DecodeString:model.picurl]];
     return cell;
 }
 
@@ -45,7 +45,7 @@
 #pragma mark 私有方法
 
 - (void)tt_setupViews {
-    self.backgroundColor = Col_ECE;
+    self.backgroundColor = Col_F6F;
     [self addSubview:self.BannerV];
     self.BannerV.delegate = self;
     self.BannerV.dataSource = self;
@@ -57,7 +57,7 @@
 
 - (ZKCycleScrollView *)BannerV {
     if (!_BannerV) {
-        _BannerV = [[ZKCycleScrollView alloc] initWithFrame:CGRectMake(0.f, 0.f, KScreenWidth , 127 + 10)];
+        _BannerV = [[ZKCycleScrollView alloc] initWithFrame:CGRectMake(0.f, 0.f, KScreenWidth ,(KScreenWidth - 20) / 25 * 9  + 10)];
         _BannerV.backgroundColor = Col_FFF;
         [_BannerV registerCellClass:[HZY_MallBannerCell class] forCellWithReuseIdentifier:@"Cellbanner"];
     }

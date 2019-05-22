@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic , copy) NSString *discription;
 
-@property (nonatomic , copy) NSString *headimg;
+@property (nonatomic , copy) NSMutableArray *headimg;
 
 @property (nonatomic , assign)  NSInteger price;
 

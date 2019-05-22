@@ -31,7 +31,7 @@
 
 - (void)tt_addSubviews {
     IPhoneXHeigh
-    [self setupCollectionV:[HZY_MyfabuCollectionV class]];
+    [self setupCollectionV:[HZY_MyfabuCollectionV class]Frame:CGRectMake(0, securitytop_Y + 10, KScreenWidth, security_H - 10)];
 }
 
 - (void)configData {
@@ -48,12 +48,6 @@
 
 - (void)configureViewFromLocalisation {
     self.title = LOCALIZATION(@"WDFB");
-}
-
-
-- (void)tt_changeDefauleConfiguration {
-    self.Is_hideJuhuazhuan = NO;
-    [self wr_setNavBarShadowImageHidden:NO];
 }
 
 #pragma mark 存取方法

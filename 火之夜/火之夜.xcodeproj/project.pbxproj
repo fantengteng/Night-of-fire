@@ -10,13 +10,11 @@
 		2C03DD3222816FF000E9146A /* HZY_zixunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C03DD3122816FF000E9146A /* HZY_zixunModel.m */; };
 		2C03DD352281735900E9146A /* CurrenC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C03DD332281735900E9146A /* CurrenC.m */; };
 		2C03DD382282C91600E9146A /* HZY_UploadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C03DD372282C91600E9146A /* HZY_UploadFile.m */; };
-		2C03DD3A2282D74C00E9146A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03DD392282D74C00E9146A /* 1.png */; };
 		2C0AE8862281200700D88813 /* HZY_BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE8852281200700D88813 /* HZY_BannerModel.m */; };
 		2C0AE889228127C500D88813 /* HZY_ProductInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE888228127C500D88813 /* HZY_ProductInfoModel.m */; };
 		2C0AE88C22812FBC00D88813 /* HZY_ProducDetailC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE88B22812FBC00D88813 /* HZY_ProducDetailC.m */; };
 		2C0AE890228131B100D88813 /* HZY_ProducTableV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE88F228131B100D88813 /* HZY_ProducTableV.m */; };
 		2C0AE896228132BC00D88813 /* CurreryinfoV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE893228132BC00D88813 /* CurreryinfoV.m */; };
-		2C0AE897228132BC00D88813 /* CurreryImagSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE894228132BC00D88813 /* CurreryImagSV.m */; };
 		2C0AE89A2281331200D88813 /* HZY_ProducCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE8992281331200D88813 /* HZY_ProducCell.m */; };
 		2C0AE8A7228169DD00D88813 /* HZY_XiaoxiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AE8A6228169DD00D88813 /* HZY_XiaoxiModel.m */; };
 		2C0CCEEB2277E72B00AB7F31 /* HZY_HomeTabelV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CCEEA2277E72B00AB7F31 /* HZY_HomeTabelV.m */; };
@@ -46,7 +44,7 @@
 		2C0CD3912275A4A500885F9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CD38F2275A4A500885F9D /* LaunchScreen.storyboard */; };
 		2C0CD3942275A4A500885F9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD3932275A4A500885F9D /* main.m */; };
 		2C0CD44B2275A4E100885F9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD39C2275A4E100885F9D /* AppDelegate.m */; };
-		2C0CD44C2275A4E100885F9D /* HomeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD3A22275A4E100885F9D /* HomeC.m */; };
+		2C0CD44C2275A4E100885F9D /* HZY_HomeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD3A22275A4E100885F9D /* HZY_HomeC.m */; };
 		2C0CD44D2275A4E100885F9D /* MyC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD3A92275A4E100885F9D /* MyC.m */; };
 		2C0CD44E2275A4E100885F9D /* RootC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD3AE2275A4E100885F9D /* RootC.m */; };
 		2C0CD44F2275A4E100885F9D /* FTT_NetWorkkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD3B62275A4E100885F9D /* FTT_NetWorkkingManager.m */; };
@@ -82,8 +80,6 @@
 		2C0CD4732275A4E100885F9D /* TT_TitleV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD4042275A4E100885F9D /* TT_TitleV.m */; };
 		2C0CD4742275A4E100885F9D /* TT_BaseTableV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD4052275A4E100885F9D /* TT_BaseTableV.m */; };
 		2C0CD4792275A4E100885F9D /* TT_NothingV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD40E2275A4E100885F9D /* TT_NothingV.m */; };
-		2C0CD47A2275A4E100885F9D /* requsetshibai@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CD40F2275A4E100885F9D /* requsetshibai@2x.png */; };
-		2C0CD47B2275A4E100885F9D /* requsetshibai@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CD4102275A4E100885F9D /* requsetshibai@3x.png */; };
 		2C0CD47C2275A4E100885F9D /* TT_ViewAppearOrdisappear.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD4112275A4E100885F9D /* TT_ViewAppearOrdisappear.m */; };
 		2C0CD47D2275A4E100885F9D /* kong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CD4122275A4E100885F9D /* kong@3x.png */; };
 		2C0CD47E2275A4E100885F9D /* YYPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD4132275A4E100885F9D /* YYPhotoGroupView.m */; };
@@ -117,6 +113,30 @@
 		2C0CD4C62276EA7C00885F9D /* Localisator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD4C32276EA7C00885F9D /* Localisator.m */; };
 		2C0CD4D02276F92900885F9D /* HZY_XiaoxiC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD4CF2276F92900885F9D /* HZY_XiaoxiC.m */; };
 		2C0CD4D72276F97600885F9D /* HZY_ZixunC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0CD4D62276F97600885F9D /* HZY_ZixunC.m */; };
+		2C0DA5712286C24200C183A6 /* HZY_UITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA5702286C24200C183A6 /* HZY_UITool.m */; };
+		2C0DA5742288FBC800C183A6 /* HZY_OrderPayInterfaceC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA5732288FBC800C183A6 /* HZY_OrderPayInterfaceC.m */; };
+		2C0DA57E22893DB600C183A6 /* HZY_MyinfoC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA57C22893DB600C183A6 /* HZY_MyinfoC.m */; };
+		2C0DA57F22893DB600C183A6 /* HZY_MyinfoC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0DA57D22893DB600C183A6 /* HZY_MyinfoC.xib */; };
+		2C0DA583228940C700C183A6 /* HZY_SetUpC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA581228940C700C183A6 /* HZY_SetUpC.m */; };
+		2C0DA584228940C700C183A6 /* HZY_SetUpC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0DA582228940C700C183A6 /* HZY_SetUpC.xib */; };
+		2C0DA58E2289494E00C183A6 /* HZY_ChangeNickC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA58C2289494E00C183A6 /* HZY_ChangeNickC.m */; };
+		2C0DA58F2289494E00C183A6 /* HZY_ChangeNickC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0DA58D2289494E00C183A6 /* HZY_ChangeNickC.xib */; };
+		2C0DA591228950E300C183A6 /* jiazaishibai.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0DA590228950E300C183A6 /* jiazaishibai.png */; };
+		2C0DA5942289681100C183A6 /* CurreryImagSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA5932289681100C183A6 /* CurreryImagSV.m */; };
+		2C0DA5982289BD6100C183A6 /* HZY_shopInfoV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA5972289BD6100C183A6 /* HZY_shopInfoV.m */; };
+		2C0DA59B2289BDB400C183A6 /* HZY_shAddressV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA59A2289BDB400C183A6 /* HZY_shAddressV.m */; };
+		2C0DA59E2289BE0400C183A6 /* HZY_paymoneyV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DA59D2289BE0400C183A6 /* HZY_paymoneyV.m */; };
+		2C1064D7228BF616001F272A /* HZY_XiaoxiDetailC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1064D6228BF616001F272A /* HZY_XiaoxiDetailC.m */; };
+		2C1064DD228C0741001F272A /* PercentDrivenTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1064D9228C0741001F272A /* PercentDrivenTransition.m */; };
+		2C1064DE228C0741001F272A /* MagicMoveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1064DB228C0741001F272A /* MagicMoveAnimator.m */; };
+		2C186ED5229408C4001DD063 /* en.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C186ED2229408C3001DD063 /* en.png */; };
+		2C186ED6229408C4001DD063 /* ko.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C186ED3229408C3001DD063 /* ko.png */; };
+		2C186ED7229408C4001DD063 /* ja.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C186ED4229408C4001DD063 /* ja.png */; };
+		2C71B801228CF48E0008E200 /* HZY_hongbaoV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71B800228CF48E0008E200 /* HZY_hongbaoV.m */; };
+		2C71B804228CFC3D0008E200 /* HZY_HongbaoC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71B803228CFC3D0008E200 /* HZY_HongbaoC.m */; };
+		2C71B808228CFC770008E200 /* HZY_HongbaoTableV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71B807228CFC770008E200 /* HZY_HongbaoTableV.m */; };
+		2C71B80C228CFD1E0008E200 /* HZY_HongbaoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71B80A228CFD1E0008E200 /* HZY_HongbaoCell.m */; };
+		2C71B80D228CFD1E0008E200 /* HZY_HongbaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C71B80B228CFD1E0008E200 /* HZY_HongbaoCell.xib */; };
 		2CDBC929227FDDFC0049BCD2 /* HZY_AddressC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBC928227FDDFC0049BCD2 /* HZY_AddressC.m */; };
 		2CDBC92D227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBC92A227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.m */; };
 		2CDBC92E227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDBC92C227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.xib */; };
@@ -139,7 +159,6 @@
 		2C03DD342281735900E9146A /* CurrenC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrenC.h; sourceTree = "<group>"; };
 		2C03DD362282C91600E9146A /* HZY_UploadFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_UploadFile.h; sourceTree = "<group>"; };
 		2C03DD372282C91600E9146A /* HZY_UploadFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_UploadFile.m; sourceTree = "<group>"; };
-		2C03DD392282D74C00E9146A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		2C0AE8842281200700D88813 /* HZY_BannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_BannerModel.h; sourceTree = "<group>"; };
 		2C0AE8852281200700D88813 /* HZY_BannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_BannerModel.m; sourceTree = "<group>"; };
 		2C0AE887228127C500D88813 /* HZY_ProductInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_ProductInfoModel.h; sourceTree = "<group>"; };
@@ -150,8 +169,6 @@
 		2C0AE88F228131B100D88813 /* HZY_ProducTableV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_ProducTableV.m; sourceTree = "<group>"; };
 		2C0AE892228132BB00D88813 /* CurreryinfoV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurreryinfoV.h; sourceTree = "<group>"; };
 		2C0AE893228132BC00D88813 /* CurreryinfoV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurreryinfoV.m; sourceTree = "<group>"; };
-		2C0AE894228132BC00D88813 /* CurreryImagSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurreryImagSV.m; sourceTree = "<group>"; };
-		2C0AE895228132BC00D88813 /* CurreryImagSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurreryImagSV.h; sourceTree = "<group>"; };
 		2C0AE8982281331200D88813 /* HZY_ProducCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_ProducCell.h; sourceTree = "<group>"; };
 		2C0AE8992281331200D88813 /* HZY_ProducCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_ProducCell.m; sourceTree = "<group>"; };
 		2C0AE8A5228169DD00D88813 /* HZY_XiaoxiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_XiaoxiModel.h; sourceTree = "<group>"; };
@@ -209,8 +226,8 @@
 		2C0CD3932275A4A500885F9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C0CD39B2275A4E100885F9D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C0CD39C2275A4E100885F9D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C0CD3A22275A4E100885F9D /* HomeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeC.m; sourceTree = "<group>"; };
-		2C0CD3A32275A4E100885F9D /* HomeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeC.h; sourceTree = "<group>"; };
+		2C0CD3A22275A4E100885F9D /* HZY_HomeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZY_HomeC.m; sourceTree = "<group>"; };
+		2C0CD3A32275A4E100885F9D /* HZY_HomeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZY_HomeC.h; sourceTree = "<group>"; };
 		2C0CD3A92275A4E100885F9D /* MyC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyC.m; sourceTree = "<group>"; };
 		2C0CD3AA2275A4E100885F9D /* MyC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyC.h; sourceTree = "<group>"; };
 		2C0CD3AD2275A4E100885F9D /* RootC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootC.h; sourceTree = "<group>"; };
@@ -279,8 +296,6 @@
 		2C0CD4052275A4E100885F9D /* TT_BaseTableV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TT_BaseTableV.m; sourceTree = "<group>"; };
 		2C0CD40D2275A4E100885F9D /* YYPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYPhotoGroupView.h; sourceTree = "<group>"; };
 		2C0CD40E2275A4E100885F9D /* TT_NothingV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TT_NothingV.m; sourceTree = "<group>"; };
-		2C0CD40F2275A4E100885F9D /* requsetshibai@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "requsetshibai@2x.png"; sourceTree = "<group>"; };
-		2C0CD4102275A4E100885F9D /* requsetshibai@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "requsetshibai@3x.png"; sourceTree = "<group>"; };
 		2C0CD4112275A4E100885F9D /* TT_ViewAppearOrdisappear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TT_ViewAppearOrdisappear.m; sourceTree = "<group>"; };
 		2C0CD4122275A4E100885F9D /* kong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kong@3x.png"; sourceTree = "<group>"; };
 		2C0CD4132275A4E100885F9D /* YYPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYPhotoGroupView.m; sourceTree = "<group>"; };
@@ -340,12 +355,9 @@
 		2C0CD4AA2276E64D00885F9D /* loginV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginV.h; sourceTree = "<group>"; };
 		2C0CD4AB2276E64D00885F9D /* RegisterV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterV.h; sourceTree = "<group>"; };
 		2C0CD4AC2276E64D00885F9D /* RegisterV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterV.xib; sourceTree = "<group>"; };
-		2C0CD4B32276E95000885F9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		2C0CD4B42276E95000885F9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2C0CD4B72276E96000885F9D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		2C0CD4B82276E96000885F9D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2C0CD4BC2276E99500885F9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2C0CD4BE2276E99800885F9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2C0CD4C02276E99B00885F9D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C0CD4C32276EA7C00885F9D /* Localisator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Localisator.m; sourceTree = "<group>"; };
 		2C0CD4C42276EA7C00885F9D /* Localisator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Localisator.h; sourceTree = "<group>"; };
@@ -353,6 +365,47 @@
 		2C0CD4CF2276F92900885F9D /* HZY_XiaoxiC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_XiaoxiC.m; sourceTree = "<group>"; };
 		2C0CD4D52276F97600885F9D /* HZY_ZixunC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_ZixunC.h; sourceTree = "<group>"; };
 		2C0CD4D62276F97600885F9D /* HZY_ZixunC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_ZixunC.m; sourceTree = "<group>"; };
+		2C0DA56F2286C24200C183A6 /* HZY_UITool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_UITool.h; sourceTree = "<group>"; };
+		2C0DA5702286C24200C183A6 /* HZY_UITool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_UITool.m; sourceTree = "<group>"; };
+		2C0DA5722288FBC800C183A6 /* HZY_OrderPayInterfaceC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_OrderPayInterfaceC.h; sourceTree = "<group>"; };
+		2C0DA5732288FBC800C183A6 /* HZY_OrderPayInterfaceC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_OrderPayInterfaceC.m; sourceTree = "<group>"; };
+		2C0DA57B22893DB600C183A6 /* HZY_MyinfoC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_MyinfoC.h; sourceTree = "<group>"; };
+		2C0DA57C22893DB600C183A6 /* HZY_MyinfoC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_MyinfoC.m; sourceTree = "<group>"; };
+		2C0DA57D22893DB600C183A6 /* HZY_MyinfoC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZY_MyinfoC.xib; sourceTree = "<group>"; };
+		2C0DA580228940C700C183A6 /* HZY_SetUpC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_SetUpC.h; sourceTree = "<group>"; };
+		2C0DA581228940C700C183A6 /* HZY_SetUpC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_SetUpC.m; sourceTree = "<group>"; };
+		2C0DA582228940C700C183A6 /* HZY_SetUpC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZY_SetUpC.xib; sourceTree = "<group>"; };
+		2C0DA58B2289494E00C183A6 /* HZY_ChangeNickC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_ChangeNickC.h; sourceTree = "<group>"; };
+		2C0DA58C2289494E00C183A6 /* HZY_ChangeNickC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_ChangeNickC.m; sourceTree = "<group>"; };
+		2C0DA58D2289494E00C183A6 /* HZY_ChangeNickC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZY_ChangeNickC.xib; sourceTree = "<group>"; };
+		2C0DA590228950E300C183A6 /* jiazaishibai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiazaishibai.png; sourceTree = "<group>"; };
+		2C0DA5922289681000C183A6 /* CurreryImagSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurreryImagSV.h; sourceTree = "<group>"; };
+		2C0DA5932289681100C183A6 /* CurreryImagSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurreryImagSV.m; sourceTree = "<group>"; };
+		2C0DA5962289BD6100C183A6 /* HZY_shopInfoV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_shopInfoV.h; sourceTree = "<group>"; };
+		2C0DA5972289BD6100C183A6 /* HZY_shopInfoV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_shopInfoV.m; sourceTree = "<group>"; };
+		2C0DA5992289BDB400C183A6 /* HZY_shAddressV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_shAddressV.h; sourceTree = "<group>"; };
+		2C0DA59A2289BDB400C183A6 /* HZY_shAddressV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_shAddressV.m; sourceTree = "<group>"; };
+		2C0DA59C2289BE0400C183A6 /* HZY_paymoneyV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_paymoneyV.h; sourceTree = "<group>"; };
+		2C0DA59D2289BE0400C183A6 /* HZY_paymoneyV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_paymoneyV.m; sourceTree = "<group>"; };
+		2C1064D5228BF616001F272A /* HZY_XiaoxiDetailC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_XiaoxiDetailC.h; sourceTree = "<group>"; };
+		2C1064D6228BF616001F272A /* HZY_XiaoxiDetailC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_XiaoxiDetailC.m; sourceTree = "<group>"; };
+		2C1064D9228C0741001F272A /* PercentDrivenTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PercentDrivenTransition.m; sourceTree = "<group>"; };
+		2C1064DA228C0741001F272A /* MagicMoveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveAnimator.h; sourceTree = "<group>"; };
+		2C1064DB228C0741001F272A /* MagicMoveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveAnimator.m; sourceTree = "<group>"; };
+		2C1064DC228C0741001F272A /* PercentDrivenTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PercentDrivenTransition.h; sourceTree = "<group>"; };
+		2C186ED02293D3BE001DD063 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2C186ED2229408C3001DD063 /* en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = en.png; sourceTree = "<group>"; };
+		2C186ED3229408C3001DD063 /* ko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ko.png; sourceTree = "<group>"; };
+		2C186ED4229408C4001DD063 /* ja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ja.png; sourceTree = "<group>"; };
+		2C71B7FF228CF48E0008E200 /* HZY_hongbaoV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_hongbaoV.h; sourceTree = "<group>"; };
+		2C71B800228CF48E0008E200 /* HZY_hongbaoV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_hongbaoV.m; sourceTree = "<group>"; };
+		2C71B802228CFC3D0008E200 /* HZY_HongbaoC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_HongbaoC.h; sourceTree = "<group>"; };
+		2C71B803228CFC3D0008E200 /* HZY_HongbaoC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_HongbaoC.m; sourceTree = "<group>"; };
+		2C71B806228CFC770008E200 /* HZY_HongbaoTableV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_HongbaoTableV.h; sourceTree = "<group>"; };
+		2C71B807228CFC770008E200 /* HZY_HongbaoTableV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_HongbaoTableV.m; sourceTree = "<group>"; };
+		2C71B809228CFD1E0008E200 /* HZY_HongbaoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_HongbaoCell.h; sourceTree = "<group>"; };
+		2C71B80A228CFD1E0008E200 /* HZY_HongbaoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_HongbaoCell.m; sourceTree = "<group>"; };
+		2C71B80B228CFD1E0008E200 /* HZY_HongbaoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZY_HongbaoCell.xib; sourceTree = "<group>"; };
 		2CDBC927227FDDFC0049BCD2 /* HZY_AddressC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZY_AddressC.h; sourceTree = "<group>"; };
 		2CDBC928227FDDFC0049BCD2 /* HZY_AddressC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZY_AddressC.m; sourceTree = "<group>"; };
 		2CDBC92A227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZY_NyAddnewAddressC.m; sourceTree = "<group>"; };
@@ -408,8 +461,8 @@
 				2C0AE88F228131B100D88813 /* HZY_ProducTableV.m */,
 				2C0AE8982281331200D88813 /* HZY_ProducCell.h */,
 				2C0AE8992281331200D88813 /* HZY_ProducCell.m */,
-				2C0AE895228132BC00D88813 /* CurreryImagSV.h */,
-				2C0AE894228132BC00D88813 /* CurreryImagSV.m */,
+				2C0DA5922289681000C183A6 /* CurreryImagSV.h */,
+				2C0DA5932289681100C183A6 /* CurreryImagSV.m */,
 				2C0AE892228132BB00D88813 /* CurreryinfoV.h */,
 				2C0AE893228132BC00D88813 /* CurreryinfoV.m */,
 			);
@@ -560,14 +613,16 @@
 			children = (
 				2C0CCF10227826C400AB7F31 /* PZ_EditChildC.h */,
 				2C0CCF11227826C400AB7F31 /* PZ_EditChildC.m */,
-				2C0CD3A32275A4E100885F9D /* HomeC.h */,
-				2C0CD3A22275A4E100885F9D /* HomeC.m */,
+				2C0CD3A32275A4E100885F9D /* HZY_HomeC.h */,
+				2C0CD3A22275A4E100885F9D /* HZY_HomeC.m */,
 				2C0CCF002278215A00AB7F31 /* HZY_XinxianC.h */,
 				2C0CCF012278215A00AB7F31 /* HZY_XinxianC.m */,
 				2C0CCF032278216A00AB7F31 /* HZY_RemenC.h */,
 				2C0CCF042278216A00AB7F31 /* HZY_RemenC.m */,
 				2C0AE88A22812FBC00D88813 /* HZY_ProducDetailC.h */,
 				2C0AE88B22812FBC00D88813 /* HZY_ProducDetailC.m */,
+				2C0DA5722288FBC800C183A6 /* HZY_OrderPayInterfaceC.h */,
+				2C0DA5732288FBC800C183A6 /* HZY_OrderPayInterfaceC.m */,
 				2CDBC939228003B40049BCD2 /* HZY_FabuC.h */,
 				2CDBC93A228003B40049BCD2 /* HZY_FabuC.m */,
 			);
@@ -577,6 +632,7 @@
 		2C0CD3A42275A4E100885F9D /* V */ = {
 			isa = PBXGroup;
 			children = (
+				2C0DA5952289BD2100C183A6 /* OrderPayV */,
 				2C0AE891228131CF00D88813 /* FabuV */,
 				2C0AE88D2281318C00D88813 /* HZY_ProducTable */,
 				2C0CCF142278286800AB7F31 /* HomeChangeV */,
@@ -620,6 +676,14 @@
 			children = (
 				2C0CD3AA2275A4E100885F9D /* MyC.h */,
 				2C0CD3A92275A4E100885F9D /* MyC.m */,
+				2C71B802228CFC3D0008E200 /* HZY_HongbaoC.h */,
+				2C71B803228CFC3D0008E200 /* HZY_HongbaoC.m */,
+				2C0DA57B22893DB600C183A6 /* HZY_MyinfoC.h */,
+				2C0DA57C22893DB600C183A6 /* HZY_MyinfoC.m */,
+				2C0DA57D22893DB600C183A6 /* HZY_MyinfoC.xib */,
+				2C0DA58B2289494E00C183A6 /* HZY_ChangeNickC.h */,
+				2C0DA58C2289494E00C183A6 /* HZY_ChangeNickC.m */,
+				2C0DA58D2289494E00C183A6 /* HZY_ChangeNickC.xib */,
 				2C0CCF3A2279C41E00AB7F31 /* HZY_MygoumaiC.h */,
 				2C0CCF3B2279C41E00AB7F31 /* HZY_MygoumaiC.m */,
 				2CF6118F2279C97E002E6214 /* HZY_MyfabuC.h */,
@@ -629,6 +693,9 @@
 				2CDBC92B227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.h */,
 				2CDBC92A227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.m */,
 				2CDBC92C227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.xib */,
+				2C0DA580228940C700C183A6 /* HZY_SetUpC.h */,
+				2C0DA581228940C700C183A6 /* HZY_SetUpC.m */,
+				2C0DA582228940C700C183A6 /* HZY_SetUpC.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -636,6 +703,7 @@
 		2C0CD3AB2275A4E100885F9D /* V */ = {
 			isa = PBXGroup;
 			children = (
+				2C71B805228CFC540008E200 /* HZY_HongbaoTableV */,
 				2CDBC932227FE2D00049BCD2 /* HZY_MyaddressTableV */,
 				2CF611932279C9B1002E6214 /* HZY_MyfabuTableV */,
 				2CF611922279C99B002E6214 /* HZY_MyTable */,
@@ -854,8 +922,7 @@
 		2C0CD40C2275A4E100885F9D /* TT_UIcurrencyTool */ = {
 			isa = PBXGroup;
 			children = (
-				2C0CD40F2275A4E100885F9D /* requsetshibai@2x.png */,
-				2C0CD4102275A4E100885F9D /* requsetshibai@3x.png */,
+				2C0DA590228950E300C183A6 /* jiazaishibai.png */,
 				2C0CD4122275A4E100885F9D /* kong@3x.png */,
 				2C0CD4142275A4E100885F9D /* kong@2x.png */,
 				2C0CD40D2275A4E100885F9D /* YYPhotoGroupView.h */,
@@ -880,6 +947,7 @@
 		2C0CD41B2275A4E100885F9D /* HelperS */ = {
 			isa = PBXGroup;
 			children = (
+				2C1064D8228C0741001F272A /* Animationor */,
 				2C0CCEF922781FED00AB7F31 /* XXPageTab */,
 				2C0CCEF22277E81100AB7F31 /* ZKCycleScrollView */,
 				2C0CD41C2275A4E100885F9D /* PZ_CacheTool */,
@@ -970,6 +1038,8 @@
 				2C0CD4952275A77300885F9D /* Create_Tool.m */,
 				2C0CD4942275A77300885F9D /* TabBarTool.h */,
 				2C0CD4922275A77300885F9D /* TabBarTool.m */,
+				2C0DA56F2286C24200C183A6 /* HZY_UITool.h */,
+				2C0DA5702286C24200C183A6 /* HZY_UITool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -989,7 +1059,9 @@
 		2C0CD44A2275A4E100885F9D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				2C03DD392282D74C00E9146A /* 1.png */,
+				2C186ED3229408C3001DD063 /* ko.png */,
+				2C186ED4229408C4001DD063 /* ja.png */,
+				2C186ED2229408C3001DD063 /* en.png */,
 				2C0CD38A2275A4A300885F9D /* Main.storyboard */,
 				2C0CD38D2275A4A500885F9D /* Assets.xcassets */,
 				2C0CD38F2275A4A500885F9D /* LaunchScreen.storyboard */,
@@ -1060,6 +1132,8 @@
 			children = (
 				2C0CD4CE2276F92900885F9D /* HZY_XiaoxiC.h */,
 				2C0CD4CF2276F92900885F9D /* HZY_XiaoxiC.m */,
+				2C1064D5228BF616001F272A /* HZY_XiaoxiDetailC.h */,
+				2C1064D6228BF616001F272A /* HZY_XiaoxiDetailC.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1104,6 +1178,44 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		2C0DA5952289BD2100C183A6 /* OrderPayV */ = {
+			isa = PBXGroup;
+			children = (
+				2C0DA5962289BD6100C183A6 /* HZY_shopInfoV.h */,
+				2C0DA5972289BD6100C183A6 /* HZY_shopInfoV.m */,
+				2C0DA5992289BDB400C183A6 /* HZY_shAddressV.h */,
+				2C0DA59A2289BDB400C183A6 /* HZY_shAddressV.m */,
+				2C71B7FF228CF48E0008E200 /* HZY_hongbaoV.h */,
+				2C71B800228CF48E0008E200 /* HZY_hongbaoV.m */,
+				2C0DA59C2289BE0400C183A6 /* HZY_paymoneyV.h */,
+				2C0DA59D2289BE0400C183A6 /* HZY_paymoneyV.m */,
+			);
+			path = OrderPayV;
+			sourceTree = "<group>";
+		};
+		2C1064D8228C0741001F272A /* Animationor */ = {
+			isa = PBXGroup;
+			children = (
+				2C1064DC228C0741001F272A /* PercentDrivenTransition.h */,
+				2C1064D9228C0741001F272A /* PercentDrivenTransition.m */,
+				2C1064DA228C0741001F272A /* MagicMoveAnimator.h */,
+				2C1064DB228C0741001F272A /* MagicMoveAnimator.m */,
+			);
+			path = Animationor;
+			sourceTree = "<group>";
+		};
+		2C71B805228CFC540008E200 /* HZY_HongbaoTableV */ = {
+			isa = PBXGroup;
+			children = (
+				2C71B806228CFC770008E200 /* HZY_HongbaoTableV.h */,
+				2C71B807228CFC770008E200 /* HZY_HongbaoTableV.m */,
+				2C71B809228CFD1E0008E200 /* HZY_HongbaoCell.h */,
+				2C71B80A228CFD1E0008E200 /* HZY_HongbaoCell.m */,
+				2C71B80B228CFD1E0008E200 /* HZY_HongbaoCell.xib */,
+			);
+			path = HZY_HongbaoTableV;
+			sourceTree = "<group>";
+		};
 		2CDBC932227FE2D00049BCD2 /* HZY_MyaddressTableV */ = {
 			isa = PBXGroup;
 			children = (
@@ -1141,6 +1253,7 @@
 		C1BFD84299948F5DFB404D75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C186ED02293D3BE001DD063 /* SystemConfiguration.framework */,
 				D2024649877701FE689D289E /* libPods-火之夜.a */,
 			);
 			name = Frameworks;
@@ -1190,7 +1303,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
 				ja,
 				ko,
 			);
@@ -1211,22 +1323,27 @@
 			files = (
 				2C0CD47D2275A4E100885F9D /* kong@3x.png in Resources */,
 				2C0CD46A2275A4E100885F9D /* update.png in Resources */,
+				2C0DA58F2289494E00C183A6 /* HZY_ChangeNickC.xib in Resources */,
 				2C0CD4AD2276E64D00885F9D /* loginV.xib in Resources */,
+				2C71B80D228CFD1E0008E200 /* HZY_HongbaoCell.xib in Resources */,
+				2C0DA57F22893DB600C183A6 /* HZY_MyinfoC.xib in Resources */,
+				2C186ED6229408C4001DD063 /* ko.png in Resources */,
 				2C0CD4BB2276E99500885F9D /* InfoPlist.strings in Resources */,
 				2CDBC92E227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.xib in Resources */,
 				2C0CD4842275A4E100885F9D /* citys.json in Resources */,
 				2C0CCF1F2278299400AB7F31 /* HZY_XinRenCell.xib in Resources */,
-				2C03DD3A2282D74C00E9146A /* 1.png in Resources */,
-				2C0CD47B2275A4E100885F9D /* requsetshibai@3x.png in Resources */,
 				2C0CD3912275A4A500885F9D /* LaunchScreen.storyboard in Resources */,
-				2C0CD47A2275A4E100885F9D /* requsetshibai@2x.png in Resources */,
+				2C186ED5229408C4001DD063 /* en.png in Resources */,
 				2C0CCF2722783C5600AB7F31 /* HZY_XiaoxiCell.xib in Resources */,
 				2C0CCF302279891F00AB7F31 /* HZY_ZIxunCell.xib in Resources */,
+				2C0DA584228940C700C183A6 /* HZY_SetUpC.xib in Resources */,
 				2C0CD38E2275A4A500885F9D /* Assets.xcassets in Resources */,
 				2C0CD46B2275A4E100885F9D /* photo_delete@2x.png in Resources */,
 				2CF611A32279CA50002E6214 /* HZY_MyfabuCell.xib in Resources */,
 				2C0CD4B02276E64D00885F9D /* RegisterV.xib in Resources */,
 				2C0CD47F2275A4E100885F9D /* kong@2x.png in Resources */,
+				2C186ED7229408C4001DD063 /* ja.png in Resources */,
+				2C0DA591228950E300C183A6 /* jiazaishibai.png in Resources */,
 				2C0CD38C2275A4A300885F9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1281,15 +1398,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1064D7228BF616001F272A /* HZY_XiaoxiDetailC.m in Sources */,
 				2C0CD45D2275A4E100885F9D /* UIColor+Categpry.m in Sources */,
 				2C0CD4732275A4E100885F9D /* TT_TitleV.m in Sources */,
 				2C0AE88C22812FBC00D88813 /* HZY_ProducDetailC.m in Sources */,
+				2C0DA583228940C700C183A6 /* HZY_SetUpC.m in Sources */,
 				2C0CD4582275A4E100885F9D /* TT_TextView.m in Sources */,
+				2C71B808228CFC770008E200 /* HZY_HongbaoTableV.m in Sources */,
+				2C0DA5942289681100C183A6 /* CurreryImagSV.m in Sources */,
 				2C0CD44B2275A4E100885F9D /* AppDelegate.m in Sources */,
 				2CDBC92D227FDEEA0049BCD2 /* HZY_NyAddnewAddressC.m in Sources */,
 				2C0CD4AE2276E64D00885F9D /* RegisterV.m in Sources */,
 				2C0CD4822275A4E100885F9D /* FTT_Helper.m in Sources */,
 				2C0CD4742275A4E100885F9D /* TT_BaseTableV.m in Sources */,
+				2C0DA5982289BD6100C183A6 /* HZY_shopInfoV.m in Sources */,
 				2C0CD4502275A4E100885F9D /* TT_BaseVM.m in Sources */,
 				2C0CD4862275A4E100885F9D /* WRNavigationBar.m in Sources */,
 				2C0CD4522275A4E100885F9D /* TT_WKweb.m in Sources */,
@@ -1299,6 +1421,7 @@
 				2C0CD4702275A4E100885F9D /* TT_BaseCollectionV.m in Sources */,
 				2C0CCEF72277E81100AB7F31 /* ZKCycleScrollView.m in Sources */,
 				2C0CCEEB2277E72B00AB7F31 /* HZY_HomeTabelV.m in Sources */,
+				2C71B801228CF48E0008E200 /* HZY_hongbaoV.m in Sources */,
 				2C0AE890228131B100D88813 /* HZY_ProducTableV.m in Sources */,
 				2C0CD4592275A4E100885F9D /* TT_Custonbtn.m in Sources */,
 				2C0CCF172278289000AB7F31 /* HZY_XinxianCollectionV.m in Sources */,
@@ -1309,17 +1432,21 @@
 				2C0CD4D02276F92900885F9D /* HZY_XiaoxiC.m in Sources */,
 				2CF611912279C97E002E6214 /* HZY_MyfabuC.m in Sources */,
 				2C0CD4882275A4E100885F9D /* JMTabBarController.m in Sources */,
+				2C0DA59E2289BE0400C183A6 /* HZY_paymoneyV.m in Sources */,
 				2C0CD4802275A4E100885F9D /* TT_ProgressV.m in Sources */,
+				2C0DA5712286C24200C183A6 /* HZY_UITool.m in Sources */,
+				2C71B804228CFC3D0008E200 /* HZY_HongbaoC.m in Sources */,
 				2C0CD4512275A4E100885F9D /* FTT_APIBaseManager.m in Sources */,
 				2C0CD48C2275A4E100885F9D /* CAAnimation+JMAnimation.m in Sources */,
 				2C0CD48F2275A4E100885F9D /* JMBadgeValue.m in Sources */,
 				2CDBC931227FDF390049BCD2 /* HZY_MyaddressModel.m in Sources */,
 				2C0CD48A2275A4E100885F9D /* JMTabBarButton.m in Sources */,
 				2C0CCF052278216A00AB7F31 /* HZY_RemenC.m in Sources */,
-				2C0AE897228132BC00D88813 /* CurreryImagSV.m in Sources */,
 				2C0CCF3622798FE400AB7F31 /* HZY_HeaderV.m in Sources */,
+				2C0DA57E22893DB600C183A6 /* HZY_MyinfoC.m in Sources */,
 				2C0CD48B2275A4E100885F9D /* UIView+JM.m in Sources */,
 				2C0CD49C2275A96B00885F9D /* HomeAPI.m in Sources */,
+				2C1064DD228C0741001F272A /* PercentDrivenTransition.m in Sources */,
 				2C0CCEF12277E79400AB7F31 /* HZY_MallBannerCell.m in Sources */,
 				2C0CD4612275A4E100885F9D /* UIImage+Rotate.m in Sources */,
 				2C03DD3222816FF000E9146A /* HZY_zixunModel.m in Sources */,
@@ -1336,6 +1463,7 @@
 				2C0CD4572275A4E100885F9D /* TT_TextV.m in Sources */,
 				2C0CCEFE22781FED00AB7F31 /* XXPageTabItemLable.m in Sources */,
 				2C0CD44E2275A4E100885F9D /* RootC.m in Sources */,
+				2C0DA5742288FBC800C183A6 /* HZY_OrderPayInterfaceC.m in Sources */,
 				2C0CCEEE2277E76000AB7F31 /* HZY_HomeBannerV.m in Sources */,
 				2C0CCF2222783C3400AB7F31 /* HZY_xiaoxiTableV.m in Sources */,
 				2C0AE896228132BC00D88813 /* CurreryinfoV.m in Sources */,
@@ -1365,15 +1493,18 @@
 				2C0CCF392279907600AB7F31 /* HZY_MyTableV.m in Sources */,
 				2C0CCF1E2278299400AB7F31 /* HZY_XinRenCell.m in Sources */,
 				2C0CD4712275A4E100885F9D /* TT_BaseCell.m in Sources */,
+				2C0DA58E2289494E00C183A6 /* HZY_ChangeNickC.m in Sources */,
 				2C0CD4C62276EA7C00885F9D /* Localisator.m in Sources */,
 				2CDBC93B228003B40049BCD2 /* HZY_FabuC.m in Sources */,
+				2C1064DE228C0741001F272A /* MagicMoveAnimator.m in Sources */,
 				2C0CD45C2275A4E100885F9D /* TT_ControlTool.m in Sources */,
 				2C0CD4872275A4E100885F9D /* WRCustomNavigationBar.m in Sources */,
+				2C0DA59B2289BDB400C183A6 /* HZY_shAddressV.m in Sources */,
 				2C0AE8A7228169DD00D88813 /* HZY_XiaoxiModel.m in Sources */,
 				2C0CD4552275A4E100885F9D /* TT_BaseC.m in Sources */,
 				2C0CD4852275A4E100885F9D /* JYAddressPicker.m in Sources */,
 				2C0CCEF82277E81100AB7F31 /* ZKCycleScrollViewFlowLayout.m in Sources */,
-				2C0CD44C2275A4E100885F9D /* HomeC.m in Sources */,
+				2C0CD44C2275A4E100885F9D /* HZY_HomeC.m in Sources */,
 				2C0CD4962275A77300885F9D /* TabBarTool.m in Sources */,
 				2C0CCF2B2278A92400AB7F31 /* HZY_ZixunTableV.m in Sources */,
 				2C0CD4972275A77300885F9D /* Create_Tool.m in Sources */,
@@ -1383,6 +1514,7 @@
 				2C0CD46E2275A4E100885F9D /* TT_BaseCollectionViewCell.m in Sources */,
 				2CDBC935227FE30A0049BCD2 /* HZY_MyaddressTableV.m in Sources */,
 				2CF6119E2279CA33002E6214 /* HZY_MyfabuCollectionV.m in Sources */,
+				2C71B80C228CFD1E0008E200 /* HZY_HongbaoCell.m in Sources */,
 				2C0CCF2F2279891F00AB7F31 /* HZY_ZIxunCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1394,7 +1526,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C0CD38B2275A4A300885F9D /* Base */,
-				2C0CD4B32276E95000885F9D /* zh-Hans */,
 				2C0CD4B72276E96000885F9D /* ja */,
 				2C0CCEE62277E0EE00AB7F31 /* ko */,
 			);
@@ -1405,7 +1536,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C0CD3902275A4A500885F9D /* Base */,
-				2C0CD4B42276E95000885F9D /* zh-Hans */,
 				2C0CD4B82276E96000885F9D /* ja */,
 				2C0CCEE72277E0EE00AB7F31 /* ko */,
 			);
@@ -1416,7 +1546,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C0CD4BC2276E99500885F9D /* en */,
-				2C0CD4BE2276E99800885F9D /* zh-Hans */,
 				2C0CD4C02276E99B00885F9D /* ja */,
 				2C0CCEE82277E0EE00AB7F31 /* ko */,
 			);
@@ -1545,8 +1674,9 @@
 			baseConfigurationReference = E1CC7BBAF78E700AAF74AC76 /* Pods-火之夜.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B485QRT894;
+				DEVELOPMENT_TEAM = PTW746HBF2;
 				GCC_PREFIX_HEADER = "火之夜/Class/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/火之夜/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1554,7 +1684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HZY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tt.Nightoffire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1566,8 +1696,9 @@
 			baseConfigurationReference = 8FC2B9BB912C045FDC694A0A /* Pods-火之夜.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B485QRT894;
+				DEVELOPMENT_TEAM = PTW746HBF2;
 				GCC_PREFIX_HEADER = "火之夜/Class/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/火之夜/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1575,7 +1706,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HZY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tt.Nightoffire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

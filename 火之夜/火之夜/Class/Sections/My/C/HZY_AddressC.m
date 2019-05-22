@@ -13,6 +13,7 @@
 
 @interface HZY_AddressC ()
 @property (nonatomic , strong) HZY_MyaddressTableV *TableV;
+@property (nonatomic , strong) HZY_MyaddressModel *model;
 @end
 
 @implementation HZY_AddressC
@@ -20,10 +21,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self tt_addnavgarItme];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self configData];
 }
 #pragma mark 回调协议
 
+- (void)tt_allClose {
+    @weakify(self)
+    self.TableV.tapClose = ^(NSInteger num, id data) {
+        @strongify(self)
+        [self configtableViewmethod:num model:data];
+    };
+}
 
 #pragma mark 界面跳转
 
@@ -34,26 +46,63 @@
 }
 
 
-
 #pragma mark 触发方法
 
 - (void)addnewaddress {
     [self jump_addnewaddress:nil];
 }
 
+- (void)setupAddressMARK:(NSString *)MARK {
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    USER_ID
+    [dic setValue:usee_id forKey:@"memberId"];
+    [dic setValue:@(self.model.ID) forKey:@"id"];
+    [self configDataforNewnetWorkname:MARK params:dic networkClass:[HomeAPI class]];
+}
 
+/// 1 删除 2编辑 3默认
+- (void)configtableViewmethod:(NSInteger)type model:(id)model{
+    self.model = model;
+    [[FTT_HudTool share_FTT_HudTool]CreateHUD:@"正在提交>>>" AndView:self.view AndMode:MBProgressHUDModeIndeterminate AndImage:@"NONONO" AndBack:nil];
+    if (type == 1) {
+        [self setupAddressMARK:deleteAddressMARK];
+    }else if (type == 2) {
+        [self jump_addnewaddress:model];
+    }else if (type == 3) {
+        [self setupAddressMARK:updateAddrIsDefaultMARK];
+    }
+}
 #pragma mark 公开方法
 
 - (void)tt_addSubviews {
     [self setupTableV:[HZY_MyaddressTableV class]];
-    NSMutableArray *arr = [NSMutableArray new];
-    for (int i = 0; i < 10; i++) {
-        HZY_MyaddressModel *model = [[HZY_MyaddressModel alloc]init];
-        [arr addObject:model];
+    [self tt_allClose];
+}
+
+- (void)configData {
+    USER_ID
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    [dic setValue:usee_id forKey:@"memberId"];
+    [dic setValue:@"1" forKey:@"addType"];
+    [self configDataforNewnetWorkname:queryAddrsMARK params:dic networkClass:[HomeAPI class]];
+}
+
+- (void)configSuccessTankuang:(NSString *)mark {
+    NSString *STT;
+    if ([mark isEqualToString:deleteAddressMARK]) {
+        STT = @"删除成功";
+        [self configData];
+    }else if ([mark isEqualToString:updateAddrIsDefaultMARK]) {
+        STT = @"默认地址，设置成功";
+        for (HZY_MyaddressModel *model in self.TableV.infodata) {
+            model.Default = 0;
+        }
+        self.model.Default = 1;
+        [self.TableV reloadData];
     }
-    [self.TableV configDataNew:arr has_more:NO];
-    
-    
+    [self configTankuangTitle:STT imageName:@"NININI" Back:^{
+        
+    }];
 }
 
 #pragma mark 私有方法
@@ -65,8 +114,7 @@
 
 
 - (void)tt_changeDefauleConfiguration {
-    self.Is_hideJuhuazhuan = NO;
-    [self wr_setNavBarShadowImageHidden:NO];
+
 }
 
 - (void)tt_addnavgarItme {

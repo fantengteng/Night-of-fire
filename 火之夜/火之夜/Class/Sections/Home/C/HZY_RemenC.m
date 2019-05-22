@@ -49,12 +49,20 @@
 }
 
 #pragma mark 触发方法
+- (void)loadSuccessDataconversionallData:(id)Alldata Data:(id)Data has_more:(BOOL)has_more mark:(NSString *)mark {
+    [super loadSuccessDataconversionallData:Alldata
+                                       Data:Data has_more:has_more mark:mark];
+    
+    if (self.loadSuccess) {
+        self.loadSuccess();
+    }
+}
 
 #pragma mark 公开方法
 
 - (void)tt_addSubviews {
     IPhoneXHeigh
-    [self setupCollectionV:[HZY_XinxianCollectionV class] Frame:CGRectMake(0, 0, KScreenWidth, security_H - 44 - 49)];
+    [self setupCollectionV:[HZY_XinxianCollectionV class] Frame:CGRectMake(0, 10, KScreenWidth, security_H - 44 - 49 - 10)];
 }
 
 - (void)configData {
@@ -72,7 +80,7 @@
 - (void)tt_changeDefauleConfiguration {
     self.Is_hideJuhuazhuan = NO;
     self.CollectionV.is_refreshfoot = YES;
-    [self wr_setNavBarShadowImageHidden:NO];
+    self.CollectionV.is_refreshHeader = YES;
 }
 
 #pragma mark 存取方法

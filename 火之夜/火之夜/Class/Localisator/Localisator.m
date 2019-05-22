@@ -43,7 +43,7 @@ static NSString * const kSaveLanguageDefaultKey = @"kSaveLanguageDefaultKey";
     if (self)
     {
         _defaults                       = [NSUserDefaults standardUserDefaults];
-        _availableLanguagesArray        = @[@"en",@"zh-Hans",@"ko",@"ja"];
+        _availableLanguagesArray        = @[@"en",@"ko",@"ja"];
         _dicoLocalisation               = nil;
         _currentLanguage                = @"DeviceLanguage";
         NSString * languageSaved = [_defaults objectForKey:kSaveLanguageDefaultKey];
@@ -55,6 +55,13 @@ static NSString * const kSaveLanguageDefaultKey = @"kSaveLanguageDefaultKey";
             //获取当前设备语言
             NSArray *appLanguages = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"];
             NSString *languageName = [appLanguages objectAtIndex:0];
+            if ([languageName hasPrefix:@"zh-Hans"]) {
+                languageName = @"ja";
+            }else if ([languageName hasPrefix:@"en"]) {
+                languageName = @"en";
+            }else if ([languageName hasPrefix:@"ko"]) {
+                languageName = @"ko";
+            }
             [self setLanguage:languageName];
             
         }

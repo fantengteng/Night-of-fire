@@ -17,6 +17,10 @@
 
 @property (nonatomic , strong) CurreryImagSV *ImagesV;
 
+@property (nonatomic , strong) YYLabel *price_LAB;
+
+@property (nonatomic , strong) YYLabel *title_LAB;
+
 @property (nonatomic , strong) YYLabel *message_LAB;
 
 
@@ -41,7 +45,9 @@
 
 - (void)configData:(HZY_ProductInfoModel *)Data {
     
-    [self.headerInfo configheaderImageName:@"" nameStr:Data.nickeName timeStr:@""];
+    [self.headerInfo configheaderImageName:Data.userImg nameStr:Data.nickeName timeStr:Data.createtime];
+    self.price_LAB.text = [NSString stringWithFormat:@"¥%ld",Data.price];
+    self.title_LAB.text = Data.title;
     NSMutableAttributedString *content = [[NSMutableAttributedString alloc]initWithString:Data.discription];
     content.lineSpacing = 5;
     content.color       = Col_666;
@@ -54,9 +60,7 @@
     self.message_LAB.attributedText = content;
     
     if (content) {
-        NSMutableArray *IMS = [NSMutableArray new];
-        [IMS addObject:Data.headimg];
-        [self.ImagesV configImageS:IMS type:0];
+        [self.ImagesV configImageS:Data.headimg type:0];
     }
     
     self.ImagesV.sd_layout
@@ -73,6 +77,8 @@
 
 - (void)setupSubviewS {
     [self.contentView addSubview:self.headerInfo];
+    [self.contentView addSubview:self.price_LAB];
+    [self.contentView addSubview:self.title_LAB];
     [self.contentView addSubview:self.message_LAB];
     [self.contentView addSubview:self.ImagesV];
     [self setupSubViewsFrame];
@@ -86,10 +92,22 @@
     .topSpaceToView(self.contentView, 22)
     .heightIs(45);
     
+    self.price_LAB.sd_layout
+    .leftSpaceToView(self.contentView, 15)
+    .rightSpaceToView(self.contentView, 15)
+    .topSpaceToView(self.headerInfo, 10)
+    .heightIs(20);
+    
+    self.title_LAB.sd_layout
+    .leftEqualToView(self.price_LAB)
+    .rightEqualToView(self.price_LAB)
+    .topSpaceToView(self.price_LAB, 10)
+    .heightIs(20);
+    
     self.message_LAB.sd_layout
     .leftSpaceToView(self.contentView, 15)
     .rightSpaceToView(self.contentView, 15)
-    .topSpaceToView(self.headerInfo, 25);
+    .topSpaceToView(self.title_LAB, 10);
     
 }
 
@@ -120,6 +138,22 @@
     }
     return _ImagesV;
 }
+
+- (YYLabel *)price_LAB {
+    if (!_price_LAB) {
+        _price_LAB = [Create_Tool CreatLabeltextcolor:Col_D81 textfont:[UIFont boldSystemFontOfSize:16]];
+    }
+    return _price_LAB;
+}
+
+- (YYLabel *)title_LAB {
+    if (!_title_LAB) {
+        _title_LAB = [Create_Tool CreatLabeltextcolor:Col_333 textfont:[UIFont boldSystemFontOfSize:16]];
+    }
+    return _title_LAB;
+}
+
+
 
 
 

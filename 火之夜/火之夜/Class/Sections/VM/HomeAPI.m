@@ -13,9 +13,6 @@
 
 - (void)configrequestMark:(NSString *)requestMark {
     self.requestType = FTT_APIManagerRequestTypeGET;
-    if ([requestMark isEqualToString:imgUploadMARK]) {
-        self.requestType = FTT_APIManagerRequestTypeUpload;
-    }
     self.requestUrl  = [NSString stringWithFormat:@"%@%@",PZ_Header,requestMark];
     self.requestMark = requestMark;
 }
